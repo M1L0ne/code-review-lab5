@@ -1,24 +1,70 @@
 package ru.tsygvintsev.weapons;
 
-abstract class Weapon {
+/**
+ * абстрактный класс оружия
+ * базовая реализация для пистолетов и автоматов
+ */
+public abstract class Weapon {
+
+    /** текущее количество патронов */
     protected int ammo;
 
+    /**
+     * конструктор оружия
+     * @param ammo начальное количество патронов
+     * @throws IllegalArgumentException если патроны
+     * отрицательные
+     */
     public Weapon(int ammo) {
-        if(ammo<0) throw new RuntimeException();
+        if (ammo < 0) {
+            throw new IllegalArgumentException(
+                    "количество патронов "
+                            + "не может быть отрицательным"
+            );
+        }
         this.ammo = ammo;
     }
+
+    /**
+     * выполнение выстрела
+     * абстрактный метод для реализации в наследниках
+     */
     public abstract void shoot();
-    public int ammo() {return ammo;}
-    public boolean getAmmo() {
-        if(ammo==0) return false;
+
+    /**
+     * получение текущего количества патронов
+     * @return текущее количество патронов
+     */
+    public int getAmmoCount() {
+        return ammo;
+    }
+
+    /**
+     * проверка наличия патрона и его расходование
+     * @return истина, если был патрон, иначе ложь
+     */
+    public boolean consumeAmmo() {
+        if (ammo == 0) {
+            return false;
+        }
         ammo--;
         return true;
     }
 
-    public int load(int ammo) {
-        if(ammo<0) throw new RuntimeException();
-        int tmp=ammo;
-        this.ammo=ammo;
+    /**
+     * загрузка патронов
+     * @param bullets количество патронов для загрузки
+     * @return количество патронов, которое не влезло
+     */
+    public int load(int bullets) {
+        if (bullets < 0) {
+            throw new IllegalArgumentException(
+                    "Количество патронов "
+                            + "не может быть отрицательным"
+            );
+        }
+        final int tmp = bullets;
+        this.ammo = bullets;
         return tmp;
     }
 }
