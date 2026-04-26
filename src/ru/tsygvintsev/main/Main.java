@@ -63,9 +63,12 @@ public class Main {
 
         do {
             System.out.println("Введите действие:");
-            System.out.println("1 - Выстрел, 2 - Перезарядка");
-            System.out.println("3 - Разрядка, 4 - Узнать кол-во");
-            System.out.println("5 - Макс. кол-во, 6 - Проверка");
+            System.out.println("1 - Выстрел, "
+                    + "2 - Перезарядка");
+            System.out.println("3 - Разрядка, "
+                    + "4 - Узнать кол-во");
+            System.out.println("5 - Макс. кол-во, "
+                    + "6 - Проверка");
             System.out.println("-1 - Выйти");
 
             choice = readInt(sc);
@@ -89,14 +92,19 @@ public class Main {
                             + gun.getBullets() + " патронов.");
                     break;
                 case 5:
-                    System.out.println("Макс. кол-во патронов = "
+                    System.out.println(
+                            "Макс. кол-во патронов = "
                             + gun.getMaxBullets());
                     break;
                 case 6:
                     if (gun.isLoaded()) {
-                        System.out.println("Пистолет заряжен.");
+                        System.out.println(
+                                "Пистолет заряжен."
+                        );
                     } else {
-                        System.out.println("Пистолет разряжен.");
+                        System.out.println(
+                                "Пистолет разряжен."
+                        );
                     }
                     break;
                 case -1:
@@ -123,7 +131,8 @@ public class Main {
                 System.out.println(new Names(parts[0]));
                 break;
             case 2:
-                System.out.println(new Names(parts[0], parts[1]));
+                System.out.println(new Names(parts[0],
+                        parts[1]));
                 break;
             case 3:
                 System.out.println(new Names(
@@ -146,10 +155,14 @@ public class Main {
 
         do {
             System.out.println("Введите действие:");
-            System.out.println("1 - Добавить пару, 2 - Удалить");
-            System.out.println("3 - Получить, 4 - Вывести все");
-            System.out.println("5 - Проверить, 6 - Кол-во");
-            System.out.println("7 - Массив, 8 - Поиск имён");
+            System.out.println("1 - Добавить пару, "
+                    + "2 - Удалить");
+            System.out.println("3 - Получить, "
+                    + "4 - Вывести все");
+            System.out.println("5 - Проверить, "
+                    + "6 - Кол-во");
+            System.out.println("7 - Массив, "
+                    + "8 - Поиск имён");
             System.out.println("-1 - Выйти");
 
             choice = readInt(sc);
@@ -258,7 +271,9 @@ public class Main {
                 try {
                     params[i] = Integer.parseInt(paramsStr[i]);
                 } catch (NumberFormatException e) {
-                    System.out.println("Ошибка: введены не числа!");
+                    System.out.println(
+                            "Ошибка: введены не числа!"
+                    );
                     valid = false;
                     break;
                 }
@@ -286,7 +301,8 @@ public class Main {
         int choice;
         do {
             System.out.println("Выберите действие:");
-            System.out.println("1 - Стрелять, 2 - Очередь (сек)");
+            System.out.println("1 - Стрелять, "
+                    + "2 - Очередь (сек)");
             System.out.println("3 - Перезарядить, -1 - Выход");
 
             choice = readInt(sc);
