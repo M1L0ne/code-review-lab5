@@ -27,7 +27,7 @@ public class PhoneBook {
      * @param name имя контакта
      * @return старый номер, если контакт обновлён
      */
-    public String addContact(String name, String phoneNumber) {
+    public String addContact(String phoneNumber, String name) {
         String previousNumber = null;
 
         for (Map.Entry<String, String> entry :
@@ -49,7 +49,7 @@ public class PhoneBook {
     public void removeContact(String name) {
         for (Map.Entry<String, String> entry :
                 contacts.entrySet()) {
-            if (entry.getValue().equals(name)) {
+            if (entry.getKey().equals(name)) {
                 contacts.remove(entry.getKey());
             }
         }

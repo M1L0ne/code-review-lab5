@@ -210,7 +210,8 @@ public class Main {
                     break;
                 case 7:
                     System.out.println(
-                            "1 - Все, 2 - Телефоны, 3 - Имена:");
+                            "1 - Все, 2 - Телефоны, "
+                                    + "3 - Имена:");
                     final int arrCh = readInt(sc);
                     final String[] arr = book.getContactArray(
                             arrCh);
@@ -254,8 +255,10 @@ public class Main {
      * @param sc сканер
      */
     private static void runAutomateTask(Scanner sc) {
-        System.out.println("Введите макс. патронов и скорость:");
-        System.out.println("Можно ввести 0, 1 или 2 числа:");
+        System.out.println(
+                "Введите макс. патронов "
+                        + "и скорость стрельбы (по желанию):"
+        );
         final String autoIn = sc.nextLine().trim();
         Automate automate;
 
