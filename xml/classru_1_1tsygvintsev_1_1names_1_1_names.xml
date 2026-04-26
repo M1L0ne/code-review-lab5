@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classru_1_1tsygvintsev_1_1names_1_1_names" kind="class" language="Java" prot="public">
+    <compoundname>ru::tsygvintsev::names::Names</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classru_1_1tsygvintsev_1_1names_1_1_names_1a769973a264eae6d4eca9c09d356b16c6" prot="private" static="no" mutable="no">
+        <type>final String</type>
+        <definition>final String ru.tsygvintsev.names.Names.lastName</definition>
+        <argsstring></argsstring>
+        <name>lastName</name>
+        <qualifiedname>ru.tsygvintsev.names.Names.lastName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>фамилия </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/names/Names.java" line="10" column="26" bodyfile="src/ru/tsygvintsev/names/Names.java" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classru_1_1tsygvintsev_1_1names_1_1_names_1a1f7b1fded2169674f52253f6a5abb4a9" prot="private" static="no" mutable="no">
+        <type>final String</type>
+        <definition>final String ru.tsygvintsev.names.Names.firstName</definition>
+        <argsstring></argsstring>
+        <name>firstName</name>
+        <qualifiedname>ru.tsygvintsev.names.Names.firstName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>имя </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/names/Names.java" line="12" column="26" bodyfile="src/ru/tsygvintsev/names/Names.java" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classru_1_1tsygvintsev_1_1names_1_1_names_1a74979c00305124132f64b385b972915e" prot="private" static="no" mutable="no">
+        <type>final String</type>
+        <definition>final String ru.tsygvintsev.names.Names.patronymic</definition>
+        <argsstring></argsstring>
+        <name>patronymic</name>
+        <qualifiedname>ru.tsygvintsev.names.Names.patronymic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>отчество </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/names/Names.java" line="14" column="26" bodyfile="src/ru/tsygvintsev/names/Names.java" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1names_1_1_names_1a4482a637b022db4d37bff14215821d7a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ru.tsygvintsev.names.Names.Names</definition>
+        <argsstring>(String firstName)</argsstring>
+        <name>Names</name>
+        <qualifiedname>ru.tsygvintsev.names.Names.Names</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>firstName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>конструктор только с именем <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classru_1_1tsygvintsev_1_1names_1_1_names_1a1f7b1fded2169674f52253f6a5abb4a9" kindref="member">firstName</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>имя </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если имя пустое </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/names/Names.java" line="21" column="12" bodyfile="src/ru/tsygvintsev/names/Names.java" bodystart="21" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1names_1_1_names_1ab461a4eaa6dbb474e1997f6c8e4f4743" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ru.tsygvintsev.names.Names.Names</definition>
+        <argsstring>(String firstName, String lastName)</argsstring>
+        <name>Names</name>
+        <qualifiedname>ru.tsygvintsev.names.Names.Names</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>firstName</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>lastName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>конструктор с именем и фамилией <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classru_1_1tsygvintsev_1_1names_1_1_names_1a1f7b1fded2169674f52253f6a5abb4a9" kindref="member">firstName</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>имя </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="classru_1_1tsygvintsev_1_1names_1_1_names_1a769973a264eae6d4eca9c09d356b16c6" kindref="member">lastName</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>фамилия </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если оба пустые </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/names/Names.java" line="38" column="12" bodyfile="src/ru/tsygvintsev/names/Names.java" bodystart="38" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1names_1_1_names_1afacb1b78438dc6f9b264adb2872df349" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ru.tsygvintsev.names.Names.Names</definition>
+        <argsstring>(String firstName, String lastName, String patronymic)</argsstring>
+        <name>Names</name>
+        <qualifiedname>ru.tsygvintsev.names.Names.Names</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>firstName</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>lastName</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>patronymic</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>конструктор со всеми полями <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classru_1_1tsygvintsev_1_1names_1_1_names_1a1f7b1fded2169674f52253f6a5abb4a9" kindref="member">firstName</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>имя </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="classru_1_1tsygvintsev_1_1names_1_1_names_1a769973a264eae6d4eca9c09d356b16c6" kindref="member">lastName</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>фамилия </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="classru_1_1tsygvintsev_1_1names_1_1_names_1a74979c00305124132f64b385b972915e" kindref="member">patronymic</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>отчество </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если все пустые </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/names/Names.java" line="57" column="12" bodyfile="src/ru/tsygvintsev/names/Names.java" bodystart="57" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1names_1_1_names_1abaade5488f5319be6e9042b2e8e5e522" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String ru.tsygvintsev.names.Names.toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <qualifiedname>ru.tsygvintsev.names.Names.toString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>строковое представление полного имени <simplesect kind="return"><para>имя, фамилия и отчество через пробел </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/names/Names.java" line="88" column="19" bodyfile="src/ru/tsygvintsev/names/Names.java" bodystart="88" bodyend="100"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1names_1_1_names_1a5d1a1fea06432eb9f1efe7ce8574610b" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>static boolean ru.tsygvintsev.names.Names.isEmpty</definition>
+        <argsstring>(String text)</argsstring>
+        <name>isEmpty</name>
+        <qualifiedname>ru.tsygvintsev.names.Names.isEmpty</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>проверка строки на пустоту <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>проверяемая строка </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>истина, если строка null или состоит из пробелов </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/names/Names.java" line="79" column="28" bodyfile="src/ru/tsygvintsev/names/Names.java" bodystart="79" bodyend="81"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>неизменяемый класс для хранения имени человека поддерживает фамилию и отчество </para>
+    </detaileddescription>
+    <location file="src/ru/tsygvintsev/names/Names.java" line="7" column="13" bodyfile="src/ru/tsygvintsev/names/Names.java" bodystart="7" bodyend="101"/>
+    <listofallmembers>
+      <member refid="classru_1_1tsygvintsev_1_1names_1_1_names_1a1f7b1fded2169674f52253f6a5abb4a9" prot="private" virt="non-virtual"><scope>ru::tsygvintsev::names::Names</scope><name>firstName</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1names_1_1_names_1a5d1a1fea06432eb9f1efe7ce8574610b" prot="private" virt="non-virtual"><scope>ru::tsygvintsev::names::Names</scope><name>isEmpty</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1names_1_1_names_1a769973a264eae6d4eca9c09d356b16c6" prot="private" virt="non-virtual"><scope>ru::tsygvintsev::names::Names</scope><name>lastName</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1names_1_1_names_1a4482a637b022db4d37bff14215821d7a" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::names::Names</scope><name>Names</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1names_1_1_names_1ab461a4eaa6dbb474e1997f6c8e4f4743" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::names::Names</scope><name>Names</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1names_1_1_names_1afacb1b78438dc6f9b264adb2872df349" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::names::Names</scope><name>Names</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1names_1_1_names_1a74979c00305124132f64b385b972915e" prot="private" virt="non-virtual"><scope>ru::tsygvintsev::names::Names</scope><name>patronymic</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1names_1_1_names_1abaade5488f5319be6e9042b2e8e5e522" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::names::Names</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

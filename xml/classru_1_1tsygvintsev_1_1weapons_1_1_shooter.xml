@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classru_1_1tsygvintsev_1_1weapons_1_1_shooter" kind="class" language="Java" prot="public">
+    <compoundname>ru::tsygvintsev::weapons::Shooter</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classru_1_1tsygvintsev_1_1weapons_1_1_shooter_1aad2efba7689436c725f7b41867a8ed0e" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String ru.tsygvintsev.weapons.Shooter.name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>ru.tsygvintsev.weapons.Shooter.name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/weapons/Shooter.java" line="4" column="20" bodyfile="src/ru/tsygvintsev/weapons/Shooter.java" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classru_1_1tsygvintsev_1_1weapons_1_1_shooter_1abc7729263b73f4bc044dc7ca7a3e1915" prot="private" static="no" mutable="no">
+        <type><ref refid="classru_1_1tsygvintsev_1_1weapons_1_1_weapon" kindref="compound">Weapon</ref></type>
+        <definition>Weapon ru.tsygvintsev.weapons.Shooter.weapon</definition>
+        <argsstring></argsstring>
+        <name>weapon</name>
+        <qualifiedname>ru.tsygvintsev.weapons.Shooter.weapon</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/weapons/Shooter.java" line="5" column="20" bodyfile="src/ru/tsygvintsev/weapons/Shooter.java" bodystart="5" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1weapons_1_1_shooter_1aafb6f75a16493db1f2b25d5156031f0b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ru.tsygvintsev.weapons.Shooter.Shooter</definition>
+        <argsstring>(String name)</argsstring>
+        <name>Shooter</name>
+        <qualifiedname>ru.tsygvintsev.weapons.Shooter.Shooter</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/weapons/Shooter.java" line="7" column="12" bodyfile="src/ru/tsygvintsev/weapons/Shooter.java" bodystart="7" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1weapons_1_1_shooter_1a4a4bc1ae3b6b2e15ab6264ee26da528a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ru.tsygvintsev.weapons.Shooter.setName</definition>
+        <argsstring>(String name)</argsstring>
+        <name>setName</name>
+        <qualifiedname>ru.tsygvintsev.weapons.Shooter.setName</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/weapons/Shooter.java" line="11" column="17" bodyfile="src/ru/tsygvintsev/weapons/Shooter.java" bodystart="11" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1weapons_1_1_shooter_1a7f1d69764ab5939f10ffe698e1fb3c35" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ru.tsygvintsev.weapons.Shooter.setWeapon</definition>
+        <argsstring>(Weapon weapon)</argsstring>
+        <name>setWeapon</name>
+        <qualifiedname>ru.tsygvintsev.weapons.Shooter.setWeapon</qualifiedname>
+        <param>
+          <type><ref refid="classru_1_1tsygvintsev_1_1weapons_1_1_weapon" kindref="compound">Weapon</ref></type>
+          <declname>weapon</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/weapons/Shooter.java" line="15" column="17" bodyfile="src/ru/tsygvintsev/weapons/Shooter.java" bodystart="15" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1weapons_1_1_shooter_1a8806f80316bd6e3615dbafd89974fef5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ru.tsygvintsev.weapons.Shooter.shoot</definition>
+        <argsstring>()</argsstring>
+        <name>shoot</name>
+        <qualifiedname>ru.tsygvintsev.weapons.Shooter.shoot</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/weapons/Shooter.java" line="19" column="17" bodyfile="src/ru/tsygvintsev/weapons/Shooter.java" bodystart="19" bodyend="25"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ru.tsygvintsev.weapons.Shooter</label>
+        <link refid="classru_1_1tsygvintsev_1_1weapons_1_1_shooter"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>weapon</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ru.tsygvintsev.weapons.Weapon</label>
+        <link refid="classru_1_1tsygvintsev_1_1weapons_1_1_weapon"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/ru/tsygvintsev/weapons/Shooter.java" line="3" column="7" bodyfile="src/ru/tsygvintsev/weapons/Shooter.java" bodystart="3" bodyend="26"/>
+    <listofallmembers>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_shooter_1aad2efba7689436c725f7b41867a8ed0e" prot="private" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Shooter</scope><name>name</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_shooter_1a4a4bc1ae3b6b2e15ab6264ee26da528a" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Shooter</scope><name>setName</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_shooter_1a7f1d69764ab5939f10ffe698e1fb3c35" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Shooter</scope><name>setWeapon</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_shooter_1a8806f80316bd6e3615dbafd89974fef5" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Shooter</scope><name>shoot</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_shooter_1aafb6f75a16493db1f2b25d5156031f0b" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Shooter</scope><name>Shooter</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_shooter_1abc7729263b73f4bc044dc7ca7a3e1915" prot="private" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Shooter</scope><name>weapon</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

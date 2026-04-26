@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.16.1" xml:lang="en-US">
+  <compound refid="classru_1_1tsygvintsev_1_1weapons_1_1_automate" kind="class"><name>ru::tsygvintsev::weapons::Automate</name>
+    <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_automate_1aca2c3cef97573922b90843ca8350d79f" kind="variable"><name>speed</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_automate_1a04182956d84a05b117704f60864aca42" kind="function"><name>Automate</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_automate_1a9640cc132a44f24a396bff416783fb25" kind="function"><name>Automate</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_automate_1abc8760abaa61ef26f6dbd3cfb0962788" kind="function"><name>Automate</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_automate_1ac950b1b74ede1087a45e105ed237cbb4" kind="function"><name>shoot</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_automate_1a20c9af1e64f611794b13ed7a73755ca2" kind="function"><name>longFire</name></member>
+  </compound>
+  <compound refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun" kind="class"><name>ru::tsygvintsev::weapons::Gun</name>
+    <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1a734954231b619aa3b98d6bf8dcb44ae2" kind="variable"><name>maxBullets</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1a5d8a97571b3294b132445cc574cdd838" kind="function"><name>Gun</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1acaef34da6cdc47fcd6150f0f08922e71" kind="function"><name>Gun</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1ab6e005ab41ed4e60d5cf4cccf6b33ab0" kind="function"><name>getMaxBullets</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1a673845eb6d946ef8fd36c82b86521c1f" kind="function"><name>shoot</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1ac39456cc0cad2d6a2584d1aba51fd3ef" kind="function"><name>load</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1afc7ca2c7311becb72d8b170e7f184b2d" kind="function"><name>unload</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1acc4f083c9e0053be6312a56fd049b099" kind="function"><name>getBullets</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1a4115c5d7e563225fcbd53014efd8f4b4" kind="function"><name>isLoaded</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1aeec053a702d4d83050a2bea3827d385c" kind="function"><name>toString</name></member>
+  </compound>
+  <compound refid="classru_1_1tsygvintsev_1_1main_1_1_main" kind="class"><name>ru::tsygvintsev::main::Main</name>
+    <member refid="classru_1_1tsygvintsev_1_1main_1_1_main_1a5f8a9334268e92c659c89a60fe16545e" kind="function"><name>main</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1main_1_1_main_1a8388ff0d92a35bcb6ba70abb1fb9ccd3" kind="function"><name>runGunTask</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1main_1_1_main_1a0663a52d509f856304232a4fa2a60b3f" kind="function"><name>runNamesTask</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1main_1_1_main_1ae64f92048fb1169ccbc48e7f8a67866a" kind="function"><name>runPhoneBookTask</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1main_1_1_main_1a2a47c0981e3d763a05d4e70680d0592c" kind="function"><name>printArray</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1main_1_1_main_1ada24a49f9cc6fdc2fb21b97ae6d1176c" kind="function"><name>runAutomateTask</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1main_1_1_main_1af740630af8cdf931fc67ace5027a3c0a" kind="function"><name>readInt</name></member>
+  </compound>
+  <compound refid="classru_1_1tsygvintsev_1_1names_1_1_names" kind="class"><name>ru::tsygvintsev::names::Names</name>
+    <member refid="classru_1_1tsygvintsev_1_1names_1_1_names_1a769973a264eae6d4eca9c09d356b16c6" kind="variable"><name>lastName</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1names_1_1_names_1a1f7b1fded2169674f52253f6a5abb4a9" kind="variable"><name>firstName</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1names_1_1_names_1a74979c00305124132f64b385b972915e" kind="variable"><name>patronymic</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1names_1_1_names_1a4482a637b022db4d37bff14215821d7a" kind="function"><name>Names</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1names_1_1_names_1ab461a4eaa6dbb474e1997f6c8e4f4743" kind="function"><name>Names</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1names_1_1_names_1afacb1b78438dc6f9b264adb2872df349" kind="function"><name>Names</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1names_1_1_names_1abaade5488f5319be6e9042b2e8e5e522" kind="function"><name>toString</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1names_1_1_names_1a5d1a1fea06432eb9f1efe7ce8574610b" kind="function"><name>isEmpty</name></member>
+  </compound>
+  <compound refid="classru_1_1tsygvintsev_1_1phones_1_1_phone_book" kind="class"><name>ru::tsygvintsev::phones::PhoneBook</name>
+    <member refid="classru_1_1tsygvintsev_1_1phones_1_1_phone_book_1a95e5246247e143584fbcf718307e5612" kind="variable"><name>contacts</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1phones_1_1_phone_book_1a8c37cc1f4f954d7a7acef7469641633d" kind="function"><name>PhoneBook</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1phones_1_1_phone_book_1a214b41e5dba0a7aaccc947a347dae003" kind="function"><name>addContact</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1phones_1_1_phone_book_1ac18d37f017794e3b3a16b8e488a681b9" kind="function"><name>removeContact</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1phones_1_1_phone_book_1aab51afad65d0d76c24f50199cdc024df" kind="function"><name>getContact</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1phones_1_1_phone_book_1ac0148f02415b1a7dbc290629d6fc887f" kind="function"><name>checkContact</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1phones_1_1_phone_book_1a96335b8a3772a65ac48eb5b96ba68507" kind="function"><name>countContact</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1phones_1_1_phone_book_1a29e791f3cdab456879432b0dde557592" kind="function"><name>getContactArray</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1phones_1_1_phone_book_1a69c5e5dcd11701b0967bc9fd16235cbf" kind="function"><name>contactSearch</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1phones_1_1_phone_book_1aee1da64b8c97300391307c22730c87bf" kind="function"><name>toString</name></member>
+  </compound>
+  <compound refid="classru_1_1tsygvintsev_1_1weapons_1_1_shooter" kind="class"><name>ru::tsygvintsev::weapons::Shooter</name>
+    <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_shooter_1aad2efba7689436c725f7b41867a8ed0e" kind="variable"><name>name</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_shooter_1abc7729263b73f4bc044dc7ca7a3e1915" kind="variable"><name>weapon</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_shooter_1aafb6f75a16493db1f2b25d5156031f0b" kind="function"><name>Shooter</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_shooter_1a4a4bc1ae3b6b2e15ab6264ee26da528a" kind="function"><name>setName</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_shooter_1a7f1d69764ab5939f10ffe698e1fb3c35" kind="function"><name>setWeapon</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_shooter_1a8806f80316bd6e3615dbafd89974fef5" kind="function"><name>shoot</name></member>
+  </compound>
+  <compound refid="classru_1_1tsygvintsev_1_1weapons_1_1_weapon" kind="class"><name>ru::tsygvintsev::weapons::Weapon</name>
+    <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_weapon_1a271966e661e8a77220fa5d7b6ac6665f" kind="variable"><name>ammo</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_weapon_1a18ec0ef051d0866c09a20f9149334201" kind="function"><name>Weapon</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_weapon_1a51f1eb1af874b8fe1313fedb594a5bd9" kind="function"><name>shoot</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_weapon_1a08699e262c60556ae99147da6499c40e" kind="function"><name>getAmmoCount</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_weapon_1afc7116f048d25a5f1dc16c99f17f193d" kind="function"><name>consumeAmmo</name></member>
+    <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_weapon_1ad4343373f69574a472a6de321aaccd9d" kind="function"><name>load</name></member>
+  </compound>
+  <compound refid="namespacejava_1_1lang" kind="namespace"><name>java::lang</name>
+  </compound>
+  <compound refid="namespaceru" kind="namespace"><name>ru</name>
+  </compound>
+  <compound refid="namespaceru_1_1tsygvintsev" kind="namespace"><name>ru::tsygvintsev</name>
+  </compound>
+  <compound refid="namespaceru_1_1tsygvintsev_1_1main" kind="namespace"><name>ru::tsygvintsev::main</name>
+  </compound>
+  <compound refid="namespaceru_1_1tsygvintsev_1_1names" kind="namespace"><name>ru::tsygvintsev::names</name>
+  </compound>
+  <compound refid="namespaceru_1_1tsygvintsev_1_1phones" kind="namespace"><name>ru::tsygvintsev::phones</name>
+  </compound>
+  <compound refid="namespaceru_1_1tsygvintsev_1_1weapons" kind="namespace"><name>ru::tsygvintsev::weapons</name>
+  </compound>
+  <compound refid="_main_8java" kind="file"><name>Main.java</name>
+  </compound>
+  <compound refid="_names_8java" kind="file"><name>Names.java</name>
+  </compound>
+  <compound refid="_phone_book_8java" kind="file"><name>PhoneBook.java</name>
+  </compound>
+  <compound refid="_automate_8java" kind="file"><name>Automate.java</name>
+  </compound>
+  <compound refid="_gun_8java" kind="file"><name>Gun.java</name>
+  </compound>
+  <compound refid="_shooter_8java" kind="file"><name>Shooter.java</name>
+  </compound>
+  <compound refid="_weapon_8java" kind="file"><name>Weapon.java</name>
+  </compound>
+  <compound refid="dir_e44c805f17ff394d1017825dcaff1ca7" kind="dir"><name>src/ru/tsygvintsev/main</name>
+  </compound>
+  <compound refid="dir_caea24914d4a2033badd96436606be25" kind="dir"><name>src/ru/tsygvintsev/names</name>
+  </compound>
+  <compound refid="dir_abb14300978f77871afc36886246f543" kind="dir"><name>src/ru/tsygvintsev/phones</name>
+  </compound>
+  <compound refid="dir_bcb3927d1c5b9d511bf2735d5fdbf154" kind="dir"><name>src/ru</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+  <compound refid="dir_1093508908f33174bf83393203a9b95d" kind="dir"><name>src/ru/tsygvintsev</name>
+  </compound>
+  <compound refid="dir_716cdac519ad77e081cc631d184d66fb" kind="dir"><name>src/ru/tsygvintsev/weapons</name>
+  </compound>
+</doxygenindex>

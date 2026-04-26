@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="namespaceru_1_1tsygvintsev_1_1phones" kind="namespace" language="Java">
+    <compoundname>ru::tsygvintsev::phones</compoundname>
+    <innerclass refid="classru_1_1tsygvintsev_1_1phones_1_1_phone_book" prot="public">ru::tsygvintsev::phones::PhoneBook</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/ru/tsygvintsev/phones/PhoneBook.java" line="1" column="15"/>
+  </compounddef>
+</doxygen>

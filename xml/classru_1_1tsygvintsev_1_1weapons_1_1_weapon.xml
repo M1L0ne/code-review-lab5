@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classru_1_1tsygvintsev_1_1weapons_1_1_weapon" kind="class" language="Java" prot="public" abstract="yes">
+    <compoundname>ru::tsygvintsev::weapons::Weapon</compoundname>
+    <derivedcompoundref refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun" prot="public" virt="non-virtual">ru.tsygvintsev.weapons.Gun</derivedcompoundref>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classru_1_1tsygvintsev_1_1weapons_1_1_weapon_1a271966e661e8a77220fa5d7b6ac6665f" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ru.tsygvintsev.weapons.Weapon.ammo</definition>
+        <argsstring></argsstring>
+        <name>ammo</name>
+        <qualifiedname>ru.tsygvintsev.weapons.Weapon.ammo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>текущее количество патронов </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/weapons/Weapon.java" line="10" column="19" bodyfile="src/ru/tsygvintsev/weapons/Weapon.java" bodystart="10" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1weapons_1_1_weapon_1a18ec0ef051d0866c09a20f9149334201" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ru.tsygvintsev.weapons.Weapon.Weapon</definition>
+        <argsstring>(int ammo)</argsstring>
+        <name>Weapon</name>
+        <qualifiedname>ru.tsygvintsev.weapons.Weapon.Weapon</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>ammo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>конструктор оружия <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classru_1_1tsygvintsev_1_1weapons_1_1_weapon_1a271966e661e8a77220fa5d7b6ac6665f" kindref="member">ammo</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>начальное количество патронов </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если патроны отрицательные </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/weapons/Weapon.java" line="18" column="12" bodyfile="src/ru/tsygvintsev/weapons/Weapon.java" bodystart="18" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1weapons_1_1_weapon_1a51f1eb1af874b8fe1313fedb594a5bd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>abstract void</type>
+        <definition>abstract void ru.tsygvintsev.weapons.Weapon.shoot</definition>
+        <argsstring>()</argsstring>
+        <name>shoot</name>
+        <qualifiedname>ru.tsygvintsev.weapons.Weapon.shoot</qualifiedname>
+        <reimplementedby refid="classru_1_1tsygvintsev_1_1weapons_1_1_automate_1ac950b1b74ede1087a45e105ed237cbb4">shoot</reimplementedby>
+        <reimplementedby refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1a673845eb6d946ef8fd36c82b86521c1f">shoot</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>выполнение выстрела абстрактный метод для реализации в наследниках </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/weapons/Weapon.java" line="32" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1weapons_1_1_weapon_1a08699e262c60556ae99147da6499c40e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ru.tsygvintsev.weapons.Weapon.getAmmoCount</definition>
+        <argsstring>()</argsstring>
+        <name>getAmmoCount</name>
+        <qualifiedname>ru.tsygvintsev.weapons.Weapon.getAmmoCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>получение текущего количества патронов <simplesect kind="return"><para>текущее количество патронов </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/weapons/Weapon.java" line="38" column="16" bodyfile="src/ru/tsygvintsev/weapons/Weapon.java" bodystart="38" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1weapons_1_1_weapon_1afc7116f048d25a5f1dc16c99f17f193d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean ru.tsygvintsev.weapons.Weapon.consumeAmmo</definition>
+        <argsstring>()</argsstring>
+        <name>consumeAmmo</name>
+        <qualifiedname>ru.tsygvintsev.weapons.Weapon.consumeAmmo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>проверка наличия патрона и его расходование <simplesect kind="return"><para>истина, если был патрон, иначе ложь </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/weapons/Weapon.java" line="46" column="20" bodyfile="src/ru/tsygvintsev/weapons/Weapon.java" bodystart="46" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1weapons_1_1_weapon_1ad4343373f69574a472a6de321aaccd9d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ru.tsygvintsev.weapons.Weapon.load</definition>
+        <argsstring>(int bullets)</argsstring>
+        <name>load</name>
+        <qualifiedname>ru.tsygvintsev.weapons.Weapon.load</qualifiedname>
+        <reimplementedby refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1ac39456cc0cad2d6a2584d1aba51fd3ef">load</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>bullets</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>загрузка патронов <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bullets</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>количество патронов для загрузки </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>количество патронов, которое не влезло </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/weapons/Weapon.java" line="59" column="16" bodyfile="src/ru/tsygvintsev/weapons/Weapon.java" bodystart="59" bodyend="69"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>абстрактный класс оружия базовая реализация для пистолетов и автоматов </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ru.tsygvintsev.weapons.Weapon</label>
+        <link refid="classru_1_1tsygvintsev_1_1weapons_1_1_weapon"/>
+      </node>
+      <node id="3">
+        <label>ru.tsygvintsev.weapons.Automate</label>
+        <link refid="classru_1_1tsygvintsev_1_1weapons_1_1_automate"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ru.tsygvintsev.weapons.Gun</label>
+        <link refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="src/ru/tsygvintsev/weapons/Weapon.java" line="7" column="17" bodyfile="src/ru/tsygvintsev/weapons/Weapon.java" bodystart="7" bodyend="70"/>
+    <listofallmembers>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_weapon_1a271966e661e8a77220fa5d7b6ac6665f" prot="protected" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Weapon</scope><name>ammo</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_weapon_1afc7116f048d25a5f1dc16c99f17f193d" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Weapon</scope><name>consumeAmmo</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_weapon_1a08699e262c60556ae99147da6499c40e" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Weapon</scope><name>getAmmoCount</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_weapon_1ad4343373f69574a472a6de321aaccd9d" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Weapon</scope><name>load</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_weapon_1a51f1eb1af874b8fe1313fedb594a5bd9" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Weapon</scope><name>shoot</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_weapon_1a18ec0ef051d0866c09a20f9149334201" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Weapon</scope><name>Weapon</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,164 @@
+\doxysection{ru.\+tsygvintsev.\+phones.\+Phone\+Book Class Reference}
+\hypertarget{classru_1_1tsygvintsev_1_1phones_1_1_phone_book}{}\label{classru_1_1tsygvintsev_1_1phones_1_1_phone_book}\index{ru.tsygvintsev.phones.PhoneBook@{ru.tsygvintsev.phones.PhoneBook}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classru_1_1tsygvintsev_1_1phones_1_1_phone_book_a8c37cc1f4f954d7a7acef7469641633d}{Phone\+Book}} ()
+\item 
+String \doxymbox{\hyperlink{classru_1_1tsygvintsev_1_1phones_1_1_phone_book_a214b41e5dba0a7aaccc947a347dae003}{add\+Contact}} (String name, String phone\+Number)
+\item 
+void \doxymbox{\hyperlink{classru_1_1tsygvintsev_1_1phones_1_1_phone_book_ac18d37f017794e3b3a16b8e488a681b9}{remove\+Contact}} (String name)
+\item 
+String \doxymbox{\hyperlink{classru_1_1tsygvintsev_1_1phones_1_1_phone_book_aab51afad65d0d76c24f50199cdc024df}{get\+Contact}} (String name)
+\item 
+String \doxymbox{\hyperlink{classru_1_1tsygvintsev_1_1phones_1_1_phone_book_ac0148f02415b1a7dbc290629d6fc887f}{check\+Contact}} (String text)
+\item 
+int \doxymbox{\hyperlink{classru_1_1tsygvintsev_1_1phones_1_1_phone_book_a96335b8a3772a65ac48eb5b96ba68507}{count\+Contact}} ()
+\item 
+String\+[$\,$]\+ \doxymbox{\hyperlink{classru_1_1tsygvintsev_1_1phones_1_1_phone_book_a29e791f3cdab456879432b0dde557592}{get\+Contact\+Array}} (int choice)
+\item 
+String\+[$\,$]\+ \doxymbox{\hyperlink{classru_1_1tsygvintsev_1_1phones_1_1_phone_book_a69c5e5dcd11701b0967bc9fd16235cbf}{contact\+Search}} (String name\+Part)
+\item 
+String \doxymbox{\hyperlink{classru_1_1tsygvintsev_1_1phones_1_1_phone_book_aee1da64b8c97300391307c22730c87bf}{to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final Map$<$ String, String $>$ \doxymbox{\hyperlink{classru_1_1tsygvintsev_1_1phones_1_1_phone_book_a95e5246247e143584fbcf718307e5612}{contacts}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+телефонная книга для хранения контактов использует пару телефон -\/ имя 
+
+\label{doc-constructors}
+\Hypertarget{classru_1_1tsygvintsev_1_1phones_1_1_phone_book_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classru_1_1tsygvintsev_1_1phones_1_1_phone_book_a8c37cc1f4f954d7a7acef7469641633d}\index{ru.tsygvintsev.phones.PhoneBook@{ru.tsygvintsev.phones.PhoneBook}!PhoneBook@{PhoneBook}}
+\index{PhoneBook@{PhoneBook}!ru.tsygvintsev.phones.PhoneBook@{ru.tsygvintsev.phones.PhoneBook}}
+\doxysubsubsection{\texorpdfstring{PhoneBook()}{PhoneBook()}}
+{\footnotesize\ttfamily \label{classru_1_1tsygvintsev_1_1phones_1_1_phone_book_a8c37cc1f4f954d7a7acef7469641633d} 
+ru.\+tsygvintsev.\+phones.\+Phone\+Book.\+Phone\+Book (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+конструктор телефонной книги 
+
+\label{doc-func-members}
+\Hypertarget{classru_1_1tsygvintsev_1_1phones_1_1_phone_book_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classru_1_1tsygvintsev_1_1phones_1_1_phone_book_a214b41e5dba0a7aaccc947a347dae003}\index{ru.tsygvintsev.phones.PhoneBook@{ru.tsygvintsev.phones.PhoneBook}!addContact@{addContact}}
+\index{addContact@{addContact}!ru.tsygvintsev.phones.PhoneBook@{ru.tsygvintsev.phones.PhoneBook}}
+\doxysubsubsection{\texorpdfstring{addContact()}{addContact()}}
+{\footnotesize\ttfamily \label{classru_1_1tsygvintsev_1_1phones_1_1_phone_book_a214b41e5dba0a7aaccc947a347dae003} 
+String ru.\+tsygvintsev.\+phones.\+Phone\+Book.\+add\+Contact (\begin{DoxyParamCaption}\item[{String}]{name}{, }\item[{String}]{phone\+Number}{}\end{DoxyParamCaption})}
+
+добавление контакта 
+\begin{DoxyParams}{Parameters}
+{\em phone\+Number} & номер телефона \\
+\hline
+{\em name} & имя контакта \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+старый номер, если контакт обновлён 
+\end{DoxyReturn}
+\Hypertarget{classru_1_1tsygvintsev_1_1phones_1_1_phone_book_ac0148f02415b1a7dbc290629d6fc887f}\index{ru.tsygvintsev.phones.PhoneBook@{ru.tsygvintsev.phones.PhoneBook}!checkContact@{checkContact}}
+\index{checkContact@{checkContact}!ru.tsygvintsev.phones.PhoneBook@{ru.tsygvintsev.phones.PhoneBook}}
+\doxysubsubsection{\texorpdfstring{checkContact()}{checkContact()}}
+{\footnotesize\ttfamily \label{classru_1_1tsygvintsev_1_1phones_1_1_phone_book_ac0148f02415b1a7dbc290629d6fc887f} 
+String ru.\+tsygvintsev.\+phones.\+Phone\+Book.\+check\+Contact (\begin{DoxyParamCaption}\item[{String}]{text}{}\end{DoxyParamCaption})}
+
+проверка существования контакта 
+\begin{DoxyParams}{Parameters}
+{\em text} & имя или номер для поиска \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+строка с контактом или сообщение об отсутствии 
+\end{DoxyReturn}
+\Hypertarget{classru_1_1tsygvintsev_1_1phones_1_1_phone_book_a69c5e5dcd11701b0967bc9fd16235cbf}\index{ru.tsygvintsev.phones.PhoneBook@{ru.tsygvintsev.phones.PhoneBook}!contactSearch@{contactSearch}}
+\index{contactSearch@{contactSearch}!ru.tsygvintsev.phones.PhoneBook@{ru.tsygvintsev.phones.PhoneBook}}
+\doxysubsubsection{\texorpdfstring{contactSearch()}{contactSearch()}}
+{\footnotesize\ttfamily \label{classru_1_1tsygvintsev_1_1phones_1_1_phone_book_a69c5e5dcd11701b0967bc9fd16235cbf} 
+String\+[$\,$]\+ ru.\+tsygvintsev.\+phones.\+Phone\+Book.\+contact\+Search (\begin{DoxyParamCaption}\item[{String}]{name\+Part}{}\end{DoxyParamCaption})}
+
+поиск контактов по части имени 
+\begin{DoxyParams}{Parameters}
+{\em name\+Part} & начальная часть имени \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+массив найденных имён 
+\end{DoxyReturn}
+\Hypertarget{classru_1_1tsygvintsev_1_1phones_1_1_phone_book_a96335b8a3772a65ac48eb5b96ba68507}\index{ru.tsygvintsev.phones.PhoneBook@{ru.tsygvintsev.phones.PhoneBook}!countContact@{countContact}}
+\index{countContact@{countContact}!ru.tsygvintsev.phones.PhoneBook@{ru.tsygvintsev.phones.PhoneBook}}
+\doxysubsubsection{\texorpdfstring{countContact()}{countContact()}}
+{\footnotesize\ttfamily \label{classru_1_1tsygvintsev_1_1phones_1_1_phone_book_a96335b8a3772a65ac48eb5b96ba68507} 
+int ru.\+tsygvintsev.\+phones.\+Phone\+Book.\+count\+Contact (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+количество контактов в книге \begin{DoxyReturn}{Returns}
+число сохранённых записей 
+\end{DoxyReturn}
+\Hypertarget{classru_1_1tsygvintsev_1_1phones_1_1_phone_book_aab51afad65d0d76c24f50199cdc024df}\index{ru.tsygvintsev.phones.PhoneBook@{ru.tsygvintsev.phones.PhoneBook}!getContact@{getContact}}
+\index{getContact@{getContact}!ru.tsygvintsev.phones.PhoneBook@{ru.tsygvintsev.phones.PhoneBook}}
+\doxysubsubsection{\texorpdfstring{getContact()}{getContact()}}
+{\footnotesize\ttfamily \label{classru_1_1tsygvintsev_1_1phones_1_1_phone_book_aab51afad65d0d76c24f50199cdc024df} 
+String ru.\+tsygvintsev.\+phones.\+Phone\+Book.\+get\+Contact (\begin{DoxyParamCaption}\item[{String}]{name}{}\end{DoxyParamCaption})}
+
+поиск контакта по имени 
+\begin{DoxyParams}{Parameters}
+{\em name} & имя для поиска \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+строка с контактом или сообщение об ошибке 
+\end{DoxyReturn}
+\Hypertarget{classru_1_1tsygvintsev_1_1phones_1_1_phone_book_a29e791f3cdab456879432b0dde557592}\index{ru.tsygvintsev.phones.PhoneBook@{ru.tsygvintsev.phones.PhoneBook}!getContactArray@{getContactArray}}
+\index{getContactArray@{getContactArray}!ru.tsygvintsev.phones.PhoneBook@{ru.tsygvintsev.phones.PhoneBook}}
+\doxysubsubsection{\texorpdfstring{getContactArray()}{getContactArray()}}
+{\footnotesize\ttfamily \label{classru_1_1tsygvintsev_1_1phones_1_1_phone_book_a29e791f3cdab456879432b0dde557592} 
+String\+[$\,$]\+ ru.\+tsygvintsev.\+phones.\+Phone\+Book.\+get\+Contact\+Array (\begin{DoxyParamCaption}\item[{int}]{choice}{}\end{DoxyParamCaption})}
+
+получение контактов в виде массива 
+\begin{DoxyParams}{Parameters}
+{\em choice} & тип выборки:\+ 1 -\/ все, 2 -\/ телефоны, 3 -\/ имена \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+массив строк с выбранными данными 
+\end{DoxyReturn}
+\Hypertarget{classru_1_1tsygvintsev_1_1phones_1_1_phone_book_ac18d37f017794e3b3a16b8e488a681b9}\index{ru.tsygvintsev.phones.PhoneBook@{ru.tsygvintsev.phones.PhoneBook}!removeContact@{removeContact}}
+\index{removeContact@{removeContact}!ru.tsygvintsev.phones.PhoneBook@{ru.tsygvintsev.phones.PhoneBook}}
+\doxysubsubsection{\texorpdfstring{removeContact()}{removeContact()}}
+{\footnotesize\ttfamily \label{classru_1_1tsygvintsev_1_1phones_1_1_phone_book_ac18d37f017794e3b3a16b8e488a681b9} 
+void ru.\+tsygvintsev.\+phones.\+Phone\+Book.\+remove\+Contact (\begin{DoxyParamCaption}\item[{String}]{name}{}\end{DoxyParamCaption})}
+
+удаление контакта по имени 
+\begin{DoxyParams}{Parameters}
+{\em name} & имя для удаления \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classru_1_1tsygvintsev_1_1phones_1_1_phone_book_aee1da64b8c97300391307c22730c87bf}\index{ru.tsygvintsev.phones.PhoneBook@{ru.tsygvintsev.phones.PhoneBook}!toString@{toString}}
+\index{toString@{toString}!ru.tsygvintsev.phones.PhoneBook@{ru.tsygvintsev.phones.PhoneBook}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily \label{classru_1_1tsygvintsev_1_1phones_1_1_phone_book_aee1da64b8c97300391307c22730c87bf} 
+String ru.\+tsygvintsev.\+phones.\+Phone\+Book.\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+строковое представление книги \begin{DoxyReturn}{Returns}
+все контакты через разделитель 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{classru_1_1tsygvintsev_1_1phones_1_1_phone_book_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classru_1_1tsygvintsev_1_1phones_1_1_phone_book_a95e5246247e143584fbcf718307e5612}\index{ru.tsygvintsev.phones.PhoneBook@{ru.tsygvintsev.phones.PhoneBook}!contacts@{contacts}}
+\index{contacts@{contacts}!ru.tsygvintsev.phones.PhoneBook@{ru.tsygvintsev.phones.PhoneBook}}
+\doxysubsubsection{\texorpdfstring{contacts}{contacts}}
+{\footnotesize\ttfamily \label{classru_1_1tsygvintsev_1_1phones_1_1_phone_book_a95e5246247e143584fbcf718307e5612} 
+final Map$<$String, String$>$ ru.\+tsygvintsev.\+phones.\+Phone\+Book.\+contacts\hspace{0.3cm}{\ttfamily [private]}}
+
+карта контактов:\+ телефон -\/\texorpdfstring{$>$}{>} имя 
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+src/\+ru/\+tsygvintsev/\+phones/\+\doxymbox{\hyperlink{_phone_book_8java}{Phone\+Book.\+java}}\end{DoxyCompactItemize}

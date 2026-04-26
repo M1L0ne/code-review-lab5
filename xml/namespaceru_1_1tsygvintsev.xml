@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="namespaceru_1_1tsygvintsev" kind="namespace" language="Java">
+    <compoundname>ru::tsygvintsev</compoundname>
+    <innernamespace refid="namespaceru_1_1tsygvintsev_1_1main">ru::tsygvintsev::main</innernamespace>
+    <innernamespace refid="namespaceru_1_1tsygvintsev_1_1names">ru::tsygvintsev::names</innernamespace>
+    <innernamespace refid="namespaceru_1_1tsygvintsev_1_1phones">ru::tsygvintsev::phones</innernamespace>
+    <innernamespace refid="namespaceru_1_1tsygvintsev_1_1weapons">ru::tsygvintsev::weapons</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="[generated]" line="1" column="1"/>
+  </compounddef>
+</doxygen>

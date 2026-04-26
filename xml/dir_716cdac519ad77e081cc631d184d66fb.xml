@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_716cdac519ad77e081cc631d184d66fb" kind="dir">
+    <compoundname>src/ru/tsygvintsev/weapons</compoundname>
+    <innerfile refid="_automate_8java">Automate.java</innerfile>
+    <innerfile refid="_gun_8java">Gun.java</innerfile>
+    <innerfile refid="_shooter_8java">Shooter.java</innerfile>
+    <innerfile refid="_weapon_8java">Weapon.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/ru/tsygvintsev/weapons/"/>
+  </compounddef>
+</doxygen>

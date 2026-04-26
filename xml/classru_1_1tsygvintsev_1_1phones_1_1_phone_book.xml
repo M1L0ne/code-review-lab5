@@ -1,0 +1,282 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classru_1_1tsygvintsev_1_1phones_1_1_phone_book" kind="class" language="Java" prot="public">
+    <compoundname>ru::tsygvintsev::phones::PhoneBook</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classru_1_1tsygvintsev_1_1phones_1_1_phone_book_1a95e5246247e143584fbcf718307e5612" prot="private" static="no" mutable="no">
+        <type>final Map&lt; String, String &gt;</type>
+        <definition>final Map&lt;String, String&gt; ru.tsygvintsev.phones.PhoneBook.contacts</definition>
+        <argsstring></argsstring>
+        <name>contacts</name>
+        <qualifiedname>ru.tsygvintsev.phones.PhoneBook.contacts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>карта контактов: телефон -&gt; имя </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/phones/PhoneBook.java" line="15" column="23" bodyfile="src/ru/tsygvintsev/phones/PhoneBook.java" bodystart="15" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1phones_1_1_phone_book_1a8c37cc1f4f954d7a7acef7469641633d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ru.tsygvintsev.phones.PhoneBook.PhoneBook</definition>
+        <argsstring>()</argsstring>
+        <name>PhoneBook</name>
+        <qualifiedname>ru.tsygvintsev.phones.PhoneBook.PhoneBook</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>конструктор телефонной книги </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/phones/PhoneBook.java" line="20" column="12" bodyfile="src/ru/tsygvintsev/phones/PhoneBook.java" bodystart="20" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1phones_1_1_phone_book_1a214b41e5dba0a7aaccc947a347dae003" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String ru.tsygvintsev.phones.PhoneBook.addContact</definition>
+        <argsstring>(String name, String phoneNumber)</argsstring>
+        <name>addContact</name>
+        <qualifiedname>ru.tsygvintsev.phones.PhoneBook.addContact</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>phoneNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>добавление контакта <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>phoneNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>номер телефона </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>имя контакта </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>старый номер, если контакт обновлён </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/phones/PhoneBook.java" line="30" column="19" bodyfile="src/ru/tsygvintsev/phones/PhoneBook.java" bodystart="30" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1phones_1_1_phone_book_1ac18d37f017794e3b3a16b8e488a681b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ru.tsygvintsev.phones.PhoneBook.removeContact</definition>
+        <argsstring>(String name)</argsstring>
+        <name>removeContact</name>
+        <qualifiedname>ru.tsygvintsev.phones.PhoneBook.removeContact</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>удаление контакта по имени <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>имя для удаления </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/phones/PhoneBook.java" line="49" column="17" bodyfile="src/ru/tsygvintsev/phones/PhoneBook.java" bodystart="49" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1phones_1_1_phone_book_1aab51afad65d0d76c24f50199cdc024df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String ru.tsygvintsev.phones.PhoneBook.getContact</definition>
+        <argsstring>(String name)</argsstring>
+        <name>getContact</name>
+        <qualifiedname>ru.tsygvintsev.phones.PhoneBook.getContact</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>поиск контакта по имени <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>имя для поиска </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>строка с контактом или сообщение об ошибке </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/phones/PhoneBook.java" line="63" column="19" bodyfile="src/ru/tsygvintsev/phones/PhoneBook.java" bodystart="63" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1phones_1_1_phone_book_1ac0148f02415b1a7dbc290629d6fc887f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String ru.tsygvintsev.phones.PhoneBook.checkContact</definition>
+        <argsstring>(String text)</argsstring>
+        <name>checkContact</name>
+        <qualifiedname>ru.tsygvintsev.phones.PhoneBook.checkContact</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>проверка существования контакта <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>имя или номер для поиска </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>строка с контактом или сообщение об отсутствии </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/phones/PhoneBook.java" line="80" column="19" bodyfile="src/ru/tsygvintsev/phones/PhoneBook.java" bodystart="80" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1phones_1_1_phone_book_1a96335b8a3772a65ac48eb5b96ba68507" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ru.tsygvintsev.phones.PhoneBook.countContact</definition>
+        <argsstring>()</argsstring>
+        <name>countContact</name>
+        <qualifiedname>ru.tsygvintsev.phones.PhoneBook.countContact</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>количество контактов в книге <simplesect kind="return"><para>число сохранённых записей </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/phones/PhoneBook.java" line="97" column="16" bodyfile="src/ru/tsygvintsev/phones/PhoneBook.java" bodystart="97" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1phones_1_1_phone_book_1a29e791f3cdab456879432b0dde557592" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String[]</type>
+        <definition>String[] ru.tsygvintsev.phones.PhoneBook.getContactArray</definition>
+        <argsstring>(int choice)</argsstring>
+        <name>getContactArray</name>
+        <qualifiedname>ru.tsygvintsev.phones.PhoneBook.getContactArray</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>choice</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>получение контактов в виде массива <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>choice</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>тип выборки: 1 - все, 2 - телефоны, 3 - имена </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>массив строк с выбранными данными </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/phones/PhoneBook.java" line="106" column="19" bodyfile="src/ru/tsygvintsev/phones/PhoneBook.java" bodystart="106" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1phones_1_1_phone_book_1a69c5e5dcd11701b0967bc9fd16235cbf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String[]</type>
+        <definition>String[] ru.tsygvintsev.phones.PhoneBook.contactSearch</definition>
+        <argsstring>(String namePart)</argsstring>
+        <name>contactSearch</name>
+        <qualifiedname>ru.tsygvintsev.phones.PhoneBook.contactSearch</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>namePart</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>поиск контактов по части имени <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>namePart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>начальная часть имени </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>массив найденных имён </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/phones/PhoneBook.java" line="146" column="19" bodyfile="src/ru/tsygvintsev/phones/PhoneBook.java" bodystart="146" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1phones_1_1_phone_book_1aee1da64b8c97300391307c22730c87bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String ru.tsygvintsev.phones.PhoneBook.toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <qualifiedname>ru.tsygvintsev.phones.PhoneBook.toString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>строковое представление книги <simplesect kind="return"><para>все контакты через разделитель </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/phones/PhoneBook.java" line="166" column="19" bodyfile="src/ru/tsygvintsev/phones/PhoneBook.java" bodystart="166" bodyend="176"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>телефонная книга для хранения контактов использует пару телефон - имя </para>
+    </detaileddescription>
+    <location file="src/ru/tsygvintsev/phones/PhoneBook.java" line="12" column="7" bodyfile="src/ru/tsygvintsev/phones/PhoneBook.java" bodystart="12" bodyend="177"/>
+    <listofallmembers>
+      <member refid="classru_1_1tsygvintsev_1_1phones_1_1_phone_book_1a214b41e5dba0a7aaccc947a347dae003" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::phones::PhoneBook</scope><name>addContact</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1phones_1_1_phone_book_1ac0148f02415b1a7dbc290629d6fc887f" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::phones::PhoneBook</scope><name>checkContact</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1phones_1_1_phone_book_1a95e5246247e143584fbcf718307e5612" prot="private" virt="non-virtual"><scope>ru::tsygvintsev::phones::PhoneBook</scope><name>contacts</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1phones_1_1_phone_book_1a69c5e5dcd11701b0967bc9fd16235cbf" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::phones::PhoneBook</scope><name>contactSearch</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1phones_1_1_phone_book_1a96335b8a3772a65ac48eb5b96ba68507" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::phones::PhoneBook</scope><name>countContact</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1phones_1_1_phone_book_1aab51afad65d0d76c24f50199cdc024df" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::phones::PhoneBook</scope><name>getContact</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1phones_1_1_phone_book_1a29e791f3cdab456879432b0dde557592" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::phones::PhoneBook</scope><name>getContactArray</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1phones_1_1_phone_book_1a8c37cc1f4f954d7a7acef7469641633d" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::phones::PhoneBook</scope><name>PhoneBook</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1phones_1_1_phone_book_1ac18d37f017794e3b3a16b8e488a681b9" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::phones::PhoneBook</scope><name>removeContact</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1phones_1_1_phone_book_1aee1da64b8c97300391307c22730c87bf" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::phones::PhoneBook</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

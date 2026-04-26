@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_1093508908f33174bf83393203a9b95d" kind="dir">
+    <compoundname>src/ru/tsygvintsev</compoundname>
+    <innerdir refid="dir_e44c805f17ff394d1017825dcaff1ca7">src/ru/tsygvintsev/main</innerdir>
+    <innerdir refid="dir_caea24914d4a2033badd96436606be25">src/ru/tsygvintsev/names</innerdir>
+    <innerdir refid="dir_abb14300978f77871afc36886246f543">src/ru/tsygvintsev/phones</innerdir>
+    <innerdir refid="dir_716cdac519ad77e081cc631d184d66fb">src/ru/tsygvintsev/weapons</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/ru/tsygvintsev/"/>
+  </compounddef>
+</doxygen>

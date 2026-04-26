@@ -1,0 +1,117 @@
+\doxysection{ru.\+tsygvintsev.\+weapons.\+Weapon Class Reference}
+\hypertarget{classru_1_1tsygvintsev_1_1weapons_1_1_weapon}{}\label{classru_1_1tsygvintsev_1_1weapons_1_1_weapon}\index{ru.tsygvintsev.weapons.Weapon@{ru.tsygvintsev.weapons.Weapon}}
+Inheritance diagram for ru.\+tsygvintsev.\+weapons.\+Weapon:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classru_1_1tsygvintsev_1_1weapons_1_1_weapon}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classru_1_1tsygvintsev_1_1weapons_1_1_weapon_a18ec0ef051d0866c09a20f9149334201}{Weapon}} (int \doxymbox{\hyperlink{classru_1_1tsygvintsev_1_1weapons_1_1_weapon_a271966e661e8a77220fa5d7b6ac6665f}{ammo}})
+\item 
+abstract void \doxymbox{\hyperlink{classru_1_1tsygvintsev_1_1weapons_1_1_weapon_a51f1eb1af874b8fe1313fedb594a5bd9}{shoot}} ()
+\item 
+int \doxymbox{\hyperlink{classru_1_1tsygvintsev_1_1weapons_1_1_weapon_a08699e262c60556ae99147da6499c40e}{get\+Ammo\+Count}} ()
+\item 
+boolean \doxymbox{\hyperlink{classru_1_1tsygvintsev_1_1weapons_1_1_weapon_afc7116f048d25a5f1dc16c99f17f193d}{consume\+Ammo}} ()
+\item 
+int \doxymbox{\hyperlink{classru_1_1tsygvintsev_1_1weapons_1_1_weapon_ad4343373f69574a472a6de321aaccd9d}{load}} (int bullets)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{classru_1_1tsygvintsev_1_1weapons_1_1_weapon_a271966e661e8a77220fa5d7b6ac6665f}{ammo}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+абстрактный класс оружия базовая реализация для пистолетов и автоматов 
+
+\label{doc-constructors}
+\Hypertarget{classru_1_1tsygvintsev_1_1weapons_1_1_weapon_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classru_1_1tsygvintsev_1_1weapons_1_1_weapon_a18ec0ef051d0866c09a20f9149334201}\index{ru.tsygvintsev.weapons.Weapon@{ru.tsygvintsev.weapons.Weapon}!Weapon@{Weapon}}
+\index{Weapon@{Weapon}!ru.tsygvintsev.weapons.Weapon@{ru.tsygvintsev.weapons.Weapon}}
+\doxysubsubsection{\texorpdfstring{Weapon()}{Weapon()}}
+{\footnotesize\ttfamily \label{classru_1_1tsygvintsev_1_1weapons_1_1_weapon_a18ec0ef051d0866c09a20f9149334201} 
+ru.\+tsygvintsev.\+weapons.\+Weapon.\+Weapon (\begin{DoxyParamCaption}\item[{int}]{ammo}{}\end{DoxyParamCaption})}
+
+конструктор оружия 
+\begin{DoxyParams}{Parameters}
+{\em \doxylink{classru_1_1tsygvintsev_1_1weapons_1_1_weapon_a271966e661e8a77220fa5d7b6ac6665f}{ammo}} & начальное количество патронов \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & если патроны отрицательные \\
+\hline
+\end{DoxyExceptions}
+
+
+\label{doc-func-members}
+\Hypertarget{classru_1_1tsygvintsev_1_1weapons_1_1_weapon_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classru_1_1tsygvintsev_1_1weapons_1_1_weapon_afc7116f048d25a5f1dc16c99f17f193d}\index{ru.tsygvintsev.weapons.Weapon@{ru.tsygvintsev.weapons.Weapon}!consumeAmmo@{consumeAmmo}}
+\index{consumeAmmo@{consumeAmmo}!ru.tsygvintsev.weapons.Weapon@{ru.tsygvintsev.weapons.Weapon}}
+\doxysubsubsection{\texorpdfstring{consumeAmmo()}{consumeAmmo()}}
+{\footnotesize\ttfamily \label{classru_1_1tsygvintsev_1_1weapons_1_1_weapon_afc7116f048d25a5f1dc16c99f17f193d} 
+boolean ru.\+tsygvintsev.\+weapons.\+Weapon.\+consume\+Ammo (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+проверка наличия патрона и его расходование \begin{DoxyReturn}{Returns}
+истина, если был патрон, иначе ложь 
+\end{DoxyReturn}
+\Hypertarget{classru_1_1tsygvintsev_1_1weapons_1_1_weapon_a08699e262c60556ae99147da6499c40e}\index{ru.tsygvintsev.weapons.Weapon@{ru.tsygvintsev.weapons.Weapon}!getAmmoCount@{getAmmoCount}}
+\index{getAmmoCount@{getAmmoCount}!ru.tsygvintsev.weapons.Weapon@{ru.tsygvintsev.weapons.Weapon}}
+\doxysubsubsection{\texorpdfstring{getAmmoCount()}{getAmmoCount()}}
+{\footnotesize\ttfamily \label{classru_1_1tsygvintsev_1_1weapons_1_1_weapon_a08699e262c60556ae99147da6499c40e} 
+int ru.\+tsygvintsev.\+weapons.\+Weapon.\+get\+Ammo\+Count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+получение текущего количества патронов \begin{DoxyReturn}{Returns}
+текущее количество патронов 
+\end{DoxyReturn}
+\Hypertarget{classru_1_1tsygvintsev_1_1weapons_1_1_weapon_ad4343373f69574a472a6de321aaccd9d}\index{ru.tsygvintsev.weapons.Weapon@{ru.tsygvintsev.weapons.Weapon}!load@{load}}
+\index{load@{load}!ru.tsygvintsev.weapons.Weapon@{ru.tsygvintsev.weapons.Weapon}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily \label{classru_1_1tsygvintsev_1_1weapons_1_1_weapon_ad4343373f69574a472a6de321aaccd9d} 
+int ru.\+tsygvintsev.\+weapons.\+Weapon.\+load (\begin{DoxyParamCaption}\item[{int}]{bullets}{}\end{DoxyParamCaption})}
+
+загрузка патронов 
+\begin{DoxyParams}{Parameters}
+{\em bullets} & количество патронов для загрузки \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+количество патронов, которое не влезло 
+\end{DoxyReturn}
+
+
+Reimplemented in \doxymbox{\hyperlink{classru_1_1tsygvintsev_1_1weapons_1_1_gun_ac39456cc0cad2d6a2584d1aba51fd3ef}{ru.\+tsygvintsev.\+weapons.\+Gun}}.
+
+\Hypertarget{classru_1_1tsygvintsev_1_1weapons_1_1_weapon_a51f1eb1af874b8fe1313fedb594a5bd9}\index{ru.tsygvintsev.weapons.Weapon@{ru.tsygvintsev.weapons.Weapon}!shoot@{shoot}}
+\index{shoot@{shoot}!ru.tsygvintsev.weapons.Weapon@{ru.tsygvintsev.weapons.Weapon}}
+\doxysubsubsection{\texorpdfstring{shoot()}{shoot()}}
+{\footnotesize\ttfamily \label{classru_1_1tsygvintsev_1_1weapons_1_1_weapon_a51f1eb1af874b8fe1313fedb594a5bd9} 
+abstract void ru.\+tsygvintsev.\+weapons.\+Weapon.\+shoot (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+выполнение выстрела абстрактный метод для реализации в наследниках 
+
+Reimplemented in \doxymbox{\hyperlink{classru_1_1tsygvintsev_1_1weapons_1_1_automate_ac950b1b74ede1087a45e105ed237cbb4}{ru.\+tsygvintsev.\+weapons.\+Automate}}, and \doxymbox{\hyperlink{classru_1_1tsygvintsev_1_1weapons_1_1_gun_a673845eb6d946ef8fd36c82b86521c1f}{ru.\+tsygvintsev.\+weapons.\+Gun}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classru_1_1tsygvintsev_1_1weapons_1_1_weapon_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classru_1_1tsygvintsev_1_1weapons_1_1_weapon_a271966e661e8a77220fa5d7b6ac6665f}\index{ru.tsygvintsev.weapons.Weapon@{ru.tsygvintsev.weapons.Weapon}!ammo@{ammo}}
+\index{ammo@{ammo}!ru.tsygvintsev.weapons.Weapon@{ru.tsygvintsev.weapons.Weapon}}
+\doxysubsubsection{\texorpdfstring{ammo}{ammo}}
+{\footnotesize\ttfamily \label{classru_1_1tsygvintsev_1_1weapons_1_1_weapon_a271966e661e8a77220fa5d7b6ac6665f} 
+int ru.\+tsygvintsev.\+weapons.\+Weapon.\+ammo\hspace{0.3cm}{\ttfamily [protected]}}
+
+текущее количество патронов 
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+src/\+ru/\+tsygvintsev/\+weapons/\+\doxymbox{\hyperlink{_weapon_8java}{Weapon.\+java}}\end{DoxyCompactItemize}

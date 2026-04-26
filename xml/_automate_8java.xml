@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="_automate_8java" kind="file" language="Java">
+    <compoundname>Automate.java</compoundname>
+    <innerclass refid="classru_1_1tsygvintsev_1_1weapons_1_1_automate" prot="public">ru::tsygvintsev::weapons::Automate</innerclass>
+    <innernamespace refid="namespaceru_1_1tsygvintsev_1_1weapons">ru::tsygvintsev::weapons</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespaceru_1_1tsygvintsev_1_1weapons" refkind="compound"><highlight class="keyword">package<sp/></highlight><highlight class="normal">ru.tsygvintsev.weapons;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="classru_1_1tsygvintsev_1_1weapons_1_1_automate" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classru_1_1tsygvintsev_1_1weapons_1_1_automate_1a04182956d84a05b117704f60864aca42" kindref="member">Automate</ref><sp/></highlight><highlight class="keyword">extends</highlight><highlight class="normal"><sp/><ref refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1a5d8a97571b3294b132445cc574cdd838" kindref="member">Gun</ref><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classru_1_1tsygvintsev_1_1weapons_1_1_automate_1aca2c3cef97573922b90843ca8350d79f" kindref="member">speed</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classru_1_1tsygvintsev_1_1weapons_1_1_automate_1a04182956d84a05b117704f60864aca42" kindref="member">Automate</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.speed<sp/>=<sp/>30;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classru_1_1tsygvintsev_1_1weapons_1_1_automate_1a04182956d84a05b117704f60864aca42" kindref="member">Automate</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1a734954231b619aa3b98d6bf8dcb44ae2" kindref="member">maxBullets</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super(<ref refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1a734954231b619aa3b98d6bf8dcb44ae2" kindref="member">maxBullets</ref>);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.speed<sp/>=<sp/><ref refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1a734954231b619aa3b98d6bf8dcb44ae2" kindref="member">maxBullets</ref><sp/>/<sp/>2;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classru_1_1tsygvintsev_1_1weapons_1_1_automate_1a04182956d84a05b117704f60864aca42" kindref="member">Automate</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1a734954231b619aa3b98d6bf8dcb44ae2" kindref="member">maxBullets</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classru_1_1tsygvintsev_1_1weapons_1_1_automate_1aca2c3cef97573922b90843ca8350d79f" kindref="member">speed</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super(<ref refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1a734954231b619aa3b98d6bf8dcb44ae2" kindref="member">maxBullets</ref>);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.speed<sp/>=<sp/><ref refid="classru_1_1tsygvintsev_1_1weapons_1_1_automate_1aca2c3cef97573922b90843ca8350d79f" kindref="member">speed</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>@Override</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classru_1_1tsygvintsev_1_1weapons_1_1_automate_1ac950b1b74ede1087a45e105ed237cbb4" kindref="member">shoot</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="classru_1_1tsygvintsev_1_1weapons_1_1_automate_1aca2c3cef97573922b90843ca8350d79f" kindref="member">speed</ref>;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super.shoot();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classru_1_1tsygvintsev_1_1weapons_1_1_automate_1a20c9af1e64f611794b13ed7a73755ca2" kindref="member">longFire</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>time)<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>totalShots<sp/>=<sp/>time<sp/>*<sp/><ref refid="classru_1_1tsygvintsev_1_1weapons_1_1_automate_1aca2c3cef97573922b90843ca8350d79f" kindref="member">speed</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>totalShots;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super.shoot();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/ru/tsygvintsev/weapons/Automate.java"/>
+  </compounddef>
+</doxygen>

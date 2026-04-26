@@ -1,0 +1,252 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classru_1_1tsygvintsev_1_1weapons_1_1_gun" kind="class" language="Java" prot="public">
+    <compoundname>ru::tsygvintsev::weapons::Gun</compoundname>
+    <basecompoundref refid="classru_1_1tsygvintsev_1_1weapons_1_1_weapon" prot="public" virt="non-virtual">ru.tsygvintsev.weapons.Weapon</basecompoundref>
+    <derivedcompoundref refid="classru_1_1tsygvintsev_1_1weapons_1_1_automate" prot="public" virt="non-virtual">ru.tsygvintsev.weapons.Automate</derivedcompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1a734954231b619aa3b98d6bf8dcb44ae2" prot="private" static="no" mutable="no">
+        <type>final int</type>
+        <definition>final int ru.tsygvintsev.weapons.Gun.maxBullets</definition>
+        <argsstring></argsstring>
+        <name>maxBullets</name>
+        <qualifiedname>ru.tsygvintsev.weapons.Gun.maxBullets</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>максимальная вместимость магазина </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/weapons/Gun.java" line="10" column="23" bodyfile="src/ru/tsygvintsev/weapons/Gun.java" bodystart="10" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1a5d8a97571b3294b132445cc574cdd838" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ru.tsygvintsev.weapons.Gun.Gun</definition>
+        <argsstring>()</argsstring>
+        <name>Gun</name>
+        <qualifiedname>ru.tsygvintsev.weapons.Gun.Gun</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>конструктор пистолета с параметрами по умолчанию </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/weapons/Gun.java" line="15" column="12" bodyfile="src/ru/tsygvintsev/weapons/Gun.java" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1acaef34da6cdc47fcd6150f0f08922e71" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ru.tsygvintsev.weapons.Gun.Gun</definition>
+        <argsstring>(int maxBullets)</argsstring>
+        <name>Gun</name>
+        <qualifiedname>ru.tsygvintsev.weapons.Gun.Gun</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>maxBullets</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>конструктор пистолета с заданным лимитом <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1a734954231b619aa3b98d6bf8dcb44ae2" kindref="member">maxBullets</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>максимальное количество патронов </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/weapons/Gun.java" line="24" column="12" bodyfile="src/ru/tsygvintsev/weapons/Gun.java" bodystart="24" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1ab6e005ab41ed4e60d5cf4cccf6b33ab0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ru.tsygvintsev.weapons.Gun.getMaxBullets</definition>
+        <argsstring>()</argsstring>
+        <name>getMaxBullets</name>
+        <qualifiedname>ru.tsygvintsev.weapons.Gun.getMaxBullets</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>получение максимальной вместимости <simplesect kind="return"><para>лимит магазина </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/weapons/Gun.java" line="33" column="16" bodyfile="src/ru/tsygvintsev/weapons/Gun.java" bodystart="33" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1a673845eb6d946ef8fd36c82b86521c1f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ru.tsygvintsev.weapons.Gun.shoot</definition>
+        <argsstring>()</argsstring>
+        <name>shoot</name>
+        <qualifiedname>ru.tsygvintsev.weapons.Gun.shoot</qualifiedname>
+        <reimplements refid="classru_1_1tsygvintsev_1_1weapons_1_1_weapon_1a51f1eb1af874b8fe1313fedb594a5bd9">shoot</reimplements>
+        <reimplementedby refid="classru_1_1tsygvintsev_1_1weapons_1_1_automate_1ac950b1b74ede1087a45e105ed237cbb4">shoot</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>выполнение выстрела проверяет наличие патронов перед выстрелом </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/weapons/Gun.java" line="42" column="17" bodyfile="src/ru/tsygvintsev/weapons/Gun.java" bodystart="42" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1ac39456cc0cad2d6a2584d1aba51fd3ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ru.tsygvintsev.weapons.Gun.load</definition>
+        <argsstring>(int bullets)</argsstring>
+        <name>load</name>
+        <qualifiedname>ru.tsygvintsev.weapons.Gun.load</qualifiedname>
+        <reimplements refid="classru_1_1tsygvintsev_1_1weapons_1_1_weapon_1ad4343373f69574a472a6de321aaccd9d">load</reimplements>
+        <param>
+          <type>int</type>
+          <declname>bullets</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>загрузка патронов с учётом лимита <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bullets</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>количество патронов для загрузки </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>остаток патронов, если магазин полон </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/weapons/Gun.java" line="56" column="16" bodyfile="src/ru/tsygvintsev/weapons/Gun.java" bodystart="56" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1afc7ca2c7311becb72d8b170e7f184b2d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ru.tsygvintsev.weapons.Gun.unload</definition>
+        <argsstring>()</argsstring>
+        <name>unload</name>
+        <qualifiedname>ru.tsygvintsev.weapons.Gun.unload</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>полная разрядка оружия <simplesect kind="return"><para>количество извлечённых патронов </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/weapons/Gun.java" line="78" column="16" bodyfile="src/ru/tsygvintsev/weapons/Gun.java" bodystart="78" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1acc4f083c9e0053be6312a56fd049b099" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ru.tsygvintsev.weapons.Gun.getBullets</definition>
+        <argsstring>()</argsstring>
+        <name>getBullets</name>
+        <qualifiedname>ru.tsygvintsev.weapons.Gun.getBullets</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/weapons/Gun.java" line="84" column="16" bodyfile="src/ru/tsygvintsev/weapons/Gun.java" bodystart="84" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1a4115c5d7e563225fcbd53014efd8f4b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean ru.tsygvintsev.weapons.Gun.isLoaded</definition>
+        <argsstring>()</argsstring>
+        <name>isLoaded</name>
+        <qualifiedname>ru.tsygvintsev.weapons.Gun.isLoaded</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>проверка заряженности <simplesect kind="return"><para>истина, если в оружии есть патроны </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/weapons/Gun.java" line="92" column="20" bodyfile="src/ru/tsygvintsev/weapons/Gun.java" bodystart="92" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1aeec053a702d4d83050a2bea3827d385c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String ru.tsygvintsev.weapons.Gun.toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <qualifiedname>ru.tsygvintsev.weapons.Gun.toString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>строковое представление оружия <simplesect kind="return"><para>описание текущего состояния пистолета </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/weapons/Gun.java" line="101" column="19" bodyfile="src/ru/tsygvintsev/weapons/Gun.java" bodystart="101" bodyend="105"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>класс пистолета наследует базовое оружие и добавляет лимит магазина </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ru.tsygvintsev.weapons.Gun</label>
+        <link refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ru.tsygvintsev.weapons.Automate</label>
+        <link refid="classru_1_1tsygvintsev_1_1weapons_1_1_automate"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ru.tsygvintsev.weapons.Weapon</label>
+        <link refid="classru_1_1tsygvintsev_1_1weapons_1_1_weapon"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>ru.tsygvintsev.weapons.Gun</label>
+        <link refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ru.tsygvintsev.weapons.Weapon</label>
+        <link refid="classru_1_1tsygvintsev_1_1weapons_1_1_weapon"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/ru/tsygvintsev/weapons/Gun.java" line="7" column="7" bodyfile="src/ru/tsygvintsev/weapons/Gun.java" bodystart="7" bodyend="106"/>
+    <listofallmembers>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_weapon_1a271966e661e8a77220fa5d7b6ac6665f" prot="protected" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Gun</scope><name>ammo</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_weapon_1afc7116f048d25a5f1dc16c99f17f193d" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Gun</scope><name>consumeAmmo</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_weapon_1a08699e262c60556ae99147da6499c40e" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Gun</scope><name>getAmmoCount</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1acc4f083c9e0053be6312a56fd049b099" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Gun</scope><name>getBullets</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1ab6e005ab41ed4e60d5cf4cccf6b33ab0" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Gun</scope><name>getMaxBullets</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1a5d8a97571b3294b132445cc574cdd838" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Gun</scope><name>Gun</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1acaef34da6cdc47fcd6150f0f08922e71" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Gun</scope><name>Gun</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1a4115c5d7e563225fcbd53014efd8f4b4" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Gun</scope><name>isLoaded</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1ac39456cc0cad2d6a2584d1aba51fd3ef" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Gun</scope><name>load</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1a734954231b619aa3b98d6bf8dcb44ae2" prot="private" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Gun</scope><name>maxBullets</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1a673845eb6d946ef8fd36c82b86521c1f" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Gun</scope><name>shoot</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1aeec053a702d4d83050a2bea3827d385c" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Gun</scope><name>toString</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1afc7ca2c7311becb72d8b170e7f184b2d" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Gun</scope><name>unload</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_weapon_1a18ec0ef051d0866c09a20f9149334201" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Gun</scope><name>Weapon</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

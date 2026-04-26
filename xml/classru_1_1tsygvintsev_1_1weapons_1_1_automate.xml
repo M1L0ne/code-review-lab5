@@ -1,0 +1,216 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classru_1_1tsygvintsev_1_1weapons_1_1_automate" kind="class" language="Java" prot="public">
+    <compoundname>ru::tsygvintsev::weapons::Automate</compoundname>
+    <basecompoundref refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun" prot="public" virt="non-virtual">ru.tsygvintsev.weapons.Gun</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classru_1_1tsygvintsev_1_1weapons_1_1_automate_1aca2c3cef97573922b90843ca8350d79f" prot="private" static="no" mutable="no">
+        <type>final int</type>
+        <definition>final int ru.tsygvintsev.weapons.Automate.speed</definition>
+        <argsstring></argsstring>
+        <name>speed</name>
+        <qualifiedname>ru.tsygvintsev.weapons.Automate.speed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>скорострельность в выстрелах за секунду </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/weapons/Automate.java" line="10" column="23" bodyfile="src/ru/tsygvintsev/weapons/Automate.java" bodystart="10" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1weapons_1_1_automate_1a04182956d84a05b117704f60864aca42" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ru.tsygvintsev.weapons.Automate.Automate</definition>
+        <argsstring>()</argsstring>
+        <name>Automate</name>
+        <qualifiedname>ru.tsygvintsev.weapons.Automate.Automate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>конструктор автомата с параметрами по умолчанию </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/weapons/Automate.java" line="15" column="12" bodyfile="src/ru/tsygvintsev/weapons/Automate.java" bodystart="15" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1weapons_1_1_automate_1a9640cc132a44f24a396bff416783fb25" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ru.tsygvintsev.weapons.Automate.Automate</definition>
+        <argsstring>(int maxBullets)</argsstring>
+        <name>Automate</name>
+        <qualifiedname>ru.tsygvintsev.weapons.Automate.Automate</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>maxBullets</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>конструктор с заданным лимитом магазина <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1a734954231b619aa3b98d6bf8dcb44ae2" kindref="member">maxBullets</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>максимальное количество патронов </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/weapons/Automate.java" line="23" column="12" bodyfile="src/ru/tsygvintsev/weapons/Automate.java" bodystart="23" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1weapons_1_1_automate_1abc8760abaa61ef26f6dbd3cfb0962788" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ru.tsygvintsev.weapons.Automate.Automate</definition>
+        <argsstring>(int maxBullets, int speed)</argsstring>
+        <name>Automate</name>
+        <qualifiedname>ru.tsygvintsev.weapons.Automate.Automate</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>maxBullets</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>speed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>конструктор с лимитом и скорострельностью <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1a734954231b619aa3b98d6bf8dcb44ae2" kindref="member">maxBullets</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>максимальное количество патронов </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="classru_1_1tsygvintsev_1_1weapons_1_1_automate_1aca2c3cef97573922b90843ca8350d79f" kindref="member">speed</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>скорострельность </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/weapons/Automate.java" line="33" column="12" bodyfile="src/ru/tsygvintsev/weapons/Automate.java" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1weapons_1_1_automate_1ac950b1b74ede1087a45e105ed237cbb4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ru.tsygvintsev.weapons.Automate.shoot</definition>
+        <argsstring>()</argsstring>
+        <name>shoot</name>
+        <qualifiedname>ru.tsygvintsev.weapons.Automate.shoot</qualifiedname>
+        <reimplements refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1a673845eb6d946ef8fd36c82b86521c1f">shoot</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>автоматическая очередь стреляет количество раз равное скорострельности </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/weapons/Automate.java" line="43" column="17" bodyfile="src/ru/tsygvintsev/weapons/Automate.java" bodystart="43" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1weapons_1_1_automate_1a20c9af1e64f611794b13ed7a73755ca2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ru.tsygvintsev.weapons.Automate.longFire</definition>
+        <argsstring>(int time)</argsstring>
+        <name>longFire</name>
+        <qualifiedname>ru.tsygvintsev.weapons.Automate.longFire</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>длительная стрельба <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>время стрельбы в секундах </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/weapons/Automate.java" line="53" column="17" bodyfile="src/ru/tsygvintsev/weapons/Automate.java" bodystart="53" bodyend="58"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>класс автомата наследует пистолет и добавляет скорострельность </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ru.tsygvintsev.weapons.Automate</label>
+        <link refid="classru_1_1tsygvintsev_1_1weapons_1_1_automate"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ru.tsygvintsev.weapons.Gun</label>
+        <link refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ru.tsygvintsev.weapons.Weapon</label>
+        <link refid="classru_1_1tsygvintsev_1_1weapons_1_1_weapon"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>ru.tsygvintsev.weapons.Automate</label>
+        <link refid="classru_1_1tsygvintsev_1_1weapons_1_1_automate"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ru.tsygvintsev.weapons.Gun</label>
+        <link refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ru.tsygvintsev.weapons.Weapon</label>
+        <link refid="classru_1_1tsygvintsev_1_1weapons_1_1_weapon"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/ru/tsygvintsev/weapons/Automate.java" line="7" column="7" bodyfile="src/ru/tsygvintsev/weapons/Automate.java" bodystart="7" bodyend="59"/>
+    <listofallmembers>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_weapon_1a271966e661e8a77220fa5d7b6ac6665f" prot="protected" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Automate</scope><name>ammo</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_automate_1a04182956d84a05b117704f60864aca42" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Automate</scope><name>Automate</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_automate_1a9640cc132a44f24a396bff416783fb25" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Automate</scope><name>Automate</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_automate_1abc8760abaa61ef26f6dbd3cfb0962788" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Automate</scope><name>Automate</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_weapon_1afc7116f048d25a5f1dc16c99f17f193d" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Automate</scope><name>consumeAmmo</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_weapon_1a08699e262c60556ae99147da6499c40e" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Automate</scope><name>getAmmoCount</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1acc4f083c9e0053be6312a56fd049b099" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Automate</scope><name>getBullets</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1ab6e005ab41ed4e60d5cf4cccf6b33ab0" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Automate</scope><name>getMaxBullets</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1a5d8a97571b3294b132445cc574cdd838" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Automate</scope><name>Gun</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1acaef34da6cdc47fcd6150f0f08922e71" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Automate</scope><name>Gun</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1a4115c5d7e563225fcbd53014efd8f4b4" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Automate</scope><name>isLoaded</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1ac39456cc0cad2d6a2584d1aba51fd3ef" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Automate</scope><name>load</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_automate_1a20c9af1e64f611794b13ed7a73755ca2" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Automate</scope><name>longFire</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1a734954231b619aa3b98d6bf8dcb44ae2" prot="private" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Automate</scope><name>maxBullets</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_automate_1ac950b1b74ede1087a45e105ed237cbb4" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Automate</scope><name>shoot</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_automate_1aca2c3cef97573922b90843ca8350d79f" prot="private" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Automate</scope><name>speed</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1aeec053a702d4d83050a2bea3827d385c" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Automate</scope><name>toString</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun_1afc7ca2c7311becb72d8b170e7f184b2d" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Automate</scope><name>unload</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1weapons_1_1_weapon_1a18ec0ef051d0866c09a20f9149334201" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::weapons::Automate</scope><name>Weapon</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

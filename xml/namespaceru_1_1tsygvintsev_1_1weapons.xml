@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="namespaceru_1_1tsygvintsev_1_1weapons" kind="namespace" language="Java">
+    <compoundname>ru::tsygvintsev::weapons</compoundname>
+    <innerclass refid="classru_1_1tsygvintsev_1_1weapons_1_1_automate" prot="public">ru::tsygvintsev::weapons::Automate</innerclass>
+    <innerclass refid="classru_1_1tsygvintsev_1_1weapons_1_1_gun" prot="public">ru::tsygvintsev::weapons::Gun</innerclass>
+    <innerclass refid="classru_1_1tsygvintsev_1_1weapons_1_1_shooter" prot="public">ru::tsygvintsev::weapons::Shooter</innerclass>
+    <innerclass refid="classru_1_1tsygvintsev_1_1weapons_1_1_weapon" prot="public">ru::tsygvintsev::weapons::Weapon</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/ru/tsygvintsev/weapons/Automate.java" line="1" column="15"/>
+  </compounddef>
+</doxygen>

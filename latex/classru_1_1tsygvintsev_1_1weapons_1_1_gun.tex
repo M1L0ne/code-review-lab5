@@ -1,0 +1,169 @@
+\doxysection{ru.\+tsygvintsev.\+weapons.\+Gun Class Reference}
+\hypertarget{classru_1_1tsygvintsev_1_1weapons_1_1_gun}{}\label{classru_1_1tsygvintsev_1_1weapons_1_1_gun}\index{ru.tsygvintsev.weapons.Gun@{ru.tsygvintsev.weapons.Gun}}
+Inheritance diagram for ru.\+tsygvintsev.\+weapons.\+Gun:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classru_1_1tsygvintsev_1_1weapons_1_1_gun}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classru_1_1tsygvintsev_1_1weapons_1_1_gun_a5d8a97571b3294b132445cc574cdd838}{Gun}} ()
+\item 
+\doxymbox{\hyperlink{classru_1_1tsygvintsev_1_1weapons_1_1_gun_acaef34da6cdc47fcd6150f0f08922e71}{Gun}} (int \doxymbox{\hyperlink{classru_1_1tsygvintsev_1_1weapons_1_1_gun_a734954231b619aa3b98d6bf8dcb44ae2}{max\+Bullets}})
+\item 
+int \doxymbox{\hyperlink{classru_1_1tsygvintsev_1_1weapons_1_1_gun_ab6e005ab41ed4e60d5cf4cccf6b33ab0}{get\+Max\+Bullets}} ()
+\item 
+void \doxymbox{\hyperlink{classru_1_1tsygvintsev_1_1weapons_1_1_gun_a673845eb6d946ef8fd36c82b86521c1f}{shoot}} ()
+\item 
+int \doxymbox{\hyperlink{classru_1_1tsygvintsev_1_1weapons_1_1_gun_ac39456cc0cad2d6a2584d1aba51fd3ef}{load}} (int bullets)
+\item 
+int \doxymbox{\hyperlink{classru_1_1tsygvintsev_1_1weapons_1_1_gun_afc7ca2c7311becb72d8b170e7f184b2d}{unload}} ()
+\item 
+int \doxymbox{\hyperlink{classru_1_1tsygvintsev_1_1weapons_1_1_gun_acc4f083c9e0053be6312a56fd049b099}{get\+Bullets}} ()
+\item 
+boolean \doxymbox{\hyperlink{classru_1_1tsygvintsev_1_1weapons_1_1_gun_a4115c5d7e563225fcbd53014efd8f4b4}{is\+Loaded}} ()
+\item 
+String \doxymbox{\hyperlink{classru_1_1tsygvintsev_1_1weapons_1_1_gun_aeec053a702d4d83050a2bea3827d385c}{to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classru_1_1tsygvintsev_1_1weapons_1_1_weapon}{ru.\+tsygvintsev.\+weapons.\+Weapon}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classru_1_1tsygvintsev_1_1weapons_1_1_weapon_a18ec0ef051d0866c09a20f9149334201}{Weapon}} (int \doxymbox{\hyperlink{classru_1_1tsygvintsev_1_1weapons_1_1_weapon_a271966e661e8a77220fa5d7b6ac6665f}{ammo}})
+\item 
+int \doxymbox{\hyperlink{classru_1_1tsygvintsev_1_1weapons_1_1_weapon_a08699e262c60556ae99147da6499c40e}{get\+Ammo\+Count}} ()
+\item 
+boolean \doxymbox{\hyperlink{classru_1_1tsygvintsev_1_1weapons_1_1_weapon_afc7116f048d25a5f1dc16c99f17f193d}{consume\+Ammo}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final int \doxymbox{\hyperlink{classru_1_1tsygvintsev_1_1weapons_1_1_gun_a734954231b619aa3b98d6bf8dcb44ae2}{max\+Bullets}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \doxymbox{\hyperlink{classru_1_1tsygvintsev_1_1weapons_1_1_weapon}{ru.\+tsygvintsev.\+weapons.\+Weapon}}}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{classru_1_1tsygvintsev_1_1weapons_1_1_weapon_a271966e661e8a77220fa5d7b6ac6665f}{ammo}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+класс пистолета наследует базовое оружие и добавляет лимит магазина 
+
+\label{doc-constructors}
+\Hypertarget{classru_1_1tsygvintsev_1_1weapons_1_1_gun_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classru_1_1tsygvintsev_1_1weapons_1_1_gun_a5d8a97571b3294b132445cc574cdd838}\index{ru.tsygvintsev.weapons.Gun@{ru.tsygvintsev.weapons.Gun}!Gun@{Gun}}
+\index{Gun@{Gun}!ru.tsygvintsev.weapons.Gun@{ru.tsygvintsev.weapons.Gun}}
+\doxysubsubsection{\texorpdfstring{Gun()}{Gun()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classru_1_1tsygvintsev_1_1weapons_1_1_gun_a5d8a97571b3294b132445cc574cdd838} 
+ru.\+tsygvintsev.\+weapons.\+Gun.\+Gun (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+конструктор пистолета с параметрами по умолчанию \Hypertarget{classru_1_1tsygvintsev_1_1weapons_1_1_gun_acaef34da6cdc47fcd6150f0f08922e71}\index{ru.tsygvintsev.weapons.Gun@{ru.tsygvintsev.weapons.Gun}!Gun@{Gun}}
+\index{Gun@{Gun}!ru.tsygvintsev.weapons.Gun@{ru.tsygvintsev.weapons.Gun}}
+\doxysubsubsection{\texorpdfstring{Gun()}{Gun()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classru_1_1tsygvintsev_1_1weapons_1_1_gun_acaef34da6cdc47fcd6150f0f08922e71} 
+ru.\+tsygvintsev.\+weapons.\+Gun.\+Gun (\begin{DoxyParamCaption}\item[{int}]{max\+Bullets}{}\end{DoxyParamCaption})}
+
+конструктор пистолета с заданным лимитом 
+\begin{DoxyParams}{Parameters}
+{\em \doxylink{classru_1_1tsygvintsev_1_1weapons_1_1_gun_a734954231b619aa3b98d6bf8dcb44ae2}{max\+Bullets}} & максимальное количество патронов \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classru_1_1tsygvintsev_1_1weapons_1_1_gun_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classru_1_1tsygvintsev_1_1weapons_1_1_gun_acc4f083c9e0053be6312a56fd049b099}\index{ru.tsygvintsev.weapons.Gun@{ru.tsygvintsev.weapons.Gun}!getBullets@{getBullets}}
+\index{getBullets@{getBullets}!ru.tsygvintsev.weapons.Gun@{ru.tsygvintsev.weapons.Gun}}
+\doxysubsubsection{\texorpdfstring{getBullets()}{getBullets()}}
+{\footnotesize\ttfamily \label{classru_1_1tsygvintsev_1_1weapons_1_1_gun_acc4f083c9e0053be6312a56fd049b099} 
+int ru.\+tsygvintsev.\+weapons.\+Gun.\+get\+Bullets (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classru_1_1tsygvintsev_1_1weapons_1_1_gun_ab6e005ab41ed4e60d5cf4cccf6b33ab0}\index{ru.tsygvintsev.weapons.Gun@{ru.tsygvintsev.weapons.Gun}!getMaxBullets@{getMaxBullets}}
+\index{getMaxBullets@{getMaxBullets}!ru.tsygvintsev.weapons.Gun@{ru.tsygvintsev.weapons.Gun}}
+\doxysubsubsection{\texorpdfstring{getMaxBullets()}{getMaxBullets()}}
+{\footnotesize\ttfamily \label{classru_1_1tsygvintsev_1_1weapons_1_1_gun_ab6e005ab41ed4e60d5cf4cccf6b33ab0} 
+int ru.\+tsygvintsev.\+weapons.\+Gun.\+get\+Max\+Bullets (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+получение максимальной вместимости \begin{DoxyReturn}{Returns}
+лимит магазина 
+\end{DoxyReturn}
+\Hypertarget{classru_1_1tsygvintsev_1_1weapons_1_1_gun_a4115c5d7e563225fcbd53014efd8f4b4}\index{ru.tsygvintsev.weapons.Gun@{ru.tsygvintsev.weapons.Gun}!isLoaded@{isLoaded}}
+\index{isLoaded@{isLoaded}!ru.tsygvintsev.weapons.Gun@{ru.tsygvintsev.weapons.Gun}}
+\doxysubsubsection{\texorpdfstring{isLoaded()}{isLoaded()}}
+{\footnotesize\ttfamily \label{classru_1_1tsygvintsev_1_1weapons_1_1_gun_a4115c5d7e563225fcbd53014efd8f4b4} 
+boolean ru.\+tsygvintsev.\+weapons.\+Gun.\+is\+Loaded (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+проверка заряженности \begin{DoxyReturn}{Returns}
+истина, если в оружии есть патроны 
+\end{DoxyReturn}
+\Hypertarget{classru_1_1tsygvintsev_1_1weapons_1_1_gun_ac39456cc0cad2d6a2584d1aba51fd3ef}\index{ru.tsygvintsev.weapons.Gun@{ru.tsygvintsev.weapons.Gun}!load@{load}}
+\index{load@{load}!ru.tsygvintsev.weapons.Gun@{ru.tsygvintsev.weapons.Gun}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily \label{classru_1_1tsygvintsev_1_1weapons_1_1_gun_ac39456cc0cad2d6a2584d1aba51fd3ef} 
+int ru.\+tsygvintsev.\+weapons.\+Gun.\+load (\begin{DoxyParamCaption}\item[{int}]{bullets}{}\end{DoxyParamCaption})}
+
+загрузка патронов с учётом лимита 
+\begin{DoxyParams}{Parameters}
+{\em bullets} & количество патронов для загрузки \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+остаток патронов, если магазин полон 
+\end{DoxyReturn}
+
+
+Reimplemented from \doxymbox{\hyperlink{classru_1_1tsygvintsev_1_1weapons_1_1_weapon_ad4343373f69574a472a6de321aaccd9d}{ru.\+tsygvintsev.\+weapons.\+Weapon}}.
+
+\Hypertarget{classru_1_1tsygvintsev_1_1weapons_1_1_gun_a673845eb6d946ef8fd36c82b86521c1f}\index{ru.tsygvintsev.weapons.Gun@{ru.tsygvintsev.weapons.Gun}!shoot@{shoot}}
+\index{shoot@{shoot}!ru.tsygvintsev.weapons.Gun@{ru.tsygvintsev.weapons.Gun}}
+\doxysubsubsection{\texorpdfstring{shoot()}{shoot()}}
+{\footnotesize\ttfamily \label{classru_1_1tsygvintsev_1_1weapons_1_1_gun_a673845eb6d946ef8fd36c82b86521c1f} 
+void ru.\+tsygvintsev.\+weapons.\+Gun.\+shoot (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+выполнение выстрела проверяет наличие патронов перед выстрелом 
+
+Reimplemented from \doxymbox{\hyperlink{classru_1_1tsygvintsev_1_1weapons_1_1_weapon_a51f1eb1af874b8fe1313fedb594a5bd9}{ru.\+tsygvintsev.\+weapons.\+Weapon}}.
+
+
+
+Reimplemented in \doxymbox{\hyperlink{classru_1_1tsygvintsev_1_1weapons_1_1_automate_ac950b1b74ede1087a45e105ed237cbb4}{ru.\+tsygvintsev.\+weapons.\+Automate}}.
+
+\Hypertarget{classru_1_1tsygvintsev_1_1weapons_1_1_gun_aeec053a702d4d83050a2bea3827d385c}\index{ru.tsygvintsev.weapons.Gun@{ru.tsygvintsev.weapons.Gun}!toString@{toString}}
+\index{toString@{toString}!ru.tsygvintsev.weapons.Gun@{ru.tsygvintsev.weapons.Gun}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily \label{classru_1_1tsygvintsev_1_1weapons_1_1_gun_aeec053a702d4d83050a2bea3827d385c} 
+String ru.\+tsygvintsev.\+weapons.\+Gun.\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+строковое представление оружия \begin{DoxyReturn}{Returns}
+описание текущего состояния пистолета 
+\end{DoxyReturn}
+\Hypertarget{classru_1_1tsygvintsev_1_1weapons_1_1_gun_afc7ca2c7311becb72d8b170e7f184b2d}\index{ru.tsygvintsev.weapons.Gun@{ru.tsygvintsev.weapons.Gun}!unload@{unload}}
+\index{unload@{unload}!ru.tsygvintsev.weapons.Gun@{ru.tsygvintsev.weapons.Gun}}
+\doxysubsubsection{\texorpdfstring{unload()}{unload()}}
+{\footnotesize\ttfamily \label{classru_1_1tsygvintsev_1_1weapons_1_1_gun_afc7ca2c7311becb72d8b170e7f184b2d} 
+int ru.\+tsygvintsev.\+weapons.\+Gun.\+unload (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+полная разрядка оружия \begin{DoxyReturn}{Returns}
+количество извлечённых патронов 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{classru_1_1tsygvintsev_1_1weapons_1_1_gun_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classru_1_1tsygvintsev_1_1weapons_1_1_gun_a734954231b619aa3b98d6bf8dcb44ae2}\index{ru.tsygvintsev.weapons.Gun@{ru.tsygvintsev.weapons.Gun}!maxBullets@{maxBullets}}
+\index{maxBullets@{maxBullets}!ru.tsygvintsev.weapons.Gun@{ru.tsygvintsev.weapons.Gun}}
+\doxysubsubsection{\texorpdfstring{maxBullets}{maxBullets}}
+{\footnotesize\ttfamily \label{classru_1_1tsygvintsev_1_1weapons_1_1_gun_a734954231b619aa3b98d6bf8dcb44ae2} 
+final int ru.\+tsygvintsev.\+weapons.\+Gun.\+max\+Bullets\hspace{0.3cm}{\ttfamily [private]}}
+
+максимальная вместимость магазина 
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+src/\+ru/\+tsygvintsev/\+weapons/\+\doxymbox{\hyperlink{_gun_8java}{Gun.\+java}}\end{DoxyCompactItemize}

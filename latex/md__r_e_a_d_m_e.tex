@@ -1,0 +1,393 @@
+\chapter{Цыгвинцев Олег Сергеевич Лабораторная №2 }
+\hypertarget{md__r_e_a_d_m_e}{}\label{md__r_e_a_d_m_e}\index{Цыгвинцев Олег Сергеевич Лабораторная №2@{Цыгвинцев Олег Сергеевич Лабораторная №2}}
+\label{md__r_e_a_d_m_e_autotoc_md0}%
+\Hypertarget{md__r_e_a_d_m_e_autotoc_md0}%
+\hypertarget{md__r_e_a_d_m_e_autotoc_md1}{}\doxysection{\texorpdfstring{Задание 1}{Задание 1}}\label{md__r_e_a_d_m_e_autotoc_md1}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md2}{}\doxysubsection{\texorpdfstring{Задача 5}{Задача 5}}\label{md__r_e_a_d_m_e_autotoc_md2}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md3}{}\doxysubsubsection{\texorpdfstring{Текст задачи}{Текст задачи}}\label{md__r_e_a_d_m_e_autotoc_md3}
+Перезарядка Пистолета. Измените сущность Пистолет из задачи 1.\+5.\+1. Модификация предполагает внесение следующих дополнительных требований:\+ • Имеет максимальное количество патронов. Максимальное количество устанавливается во время создания пистолета и не может быть изменено позднее. У пистолета можно узнать, какое максимальное количество он вмещает. • Может быть перезаряжен. Для перезарядки необходимо передать пистолету число, которое будет означать количество заряжаемых патронов. Если передано отрицательное число, необходимо выбросить ошибку, объясняющую, что отрицательного числа патронов быть не может. Если передано слишком большое число патронов – необходимо лишние вернуть. • Может быть разряжен. Это приводит к обнулению патронов в пистолете и возврате нужного числа пользователю. • Можно узнать сколько сейчас заряжено патронов. • Можно узнать заряжен он или разряжен. Создайте пистолет вместимостью 7, зарядите три патрона, выстрелите из него пять раз, затем зарядите в него 8 патронов, выстрелите еще 2 раза, разрядите его, сделайте контрольный выстрел. Если все выполнено верно, то должно быть выведено:\+ Бах! Бах! Бах! Клац! Клац! Бах! Бах! Клац! \hypertarget{md__r_e_a_d_m_e_autotoc_md4}{}\doxysubsubsection{\texorpdfstring{Алгоритм решения}{Алгоритм решения}}\label{md__r_e_a_d_m_e_autotoc_md4}
+package ru.\+tsygvintsev.\+weapons;
+
+public class Gun \{ private final int max\+Bullets; private int bullets; \begin{DoxyVerb}public Gun(int maxBullets) {
+    this.maxBullets = maxBullets;
+}
+
+public int getMaxBullets() {
+    return maxBullets;
+}
+
+public int reload(int bullets) {
+    if (bullets < 0) {
+        System.out.println("Не может быть отрицательного числа патронов.");
+        return 0;
+    }
+
+    if (bullets > maxBullets) {
+        this.bullets = maxBullets;
+        return bullets - maxBullets;
+    }
+
+    this.bullets = bullets;
+
+    return 0;
+}
+
+public int unload() {
+    int returnBullets = this.bullets;
+    this.bullets = 0;
+    return returnBullets;
+}
+
+public int getBullets() {
+    return ammo;
+}
+
+public boolean isLoaded() {
+    return ammo > 0;
+}
+
+public void fire() {
+    if (bullets > 0) {
+        bullets--;
+        System.out.println("Бах!");
+    } else {
+        System.out.println("Клац!");
+    }
+}
+
+@Override
+public String toString() {
+    return ("Пистолет с максимумом " + maxBullets + " патронов, заряженный на " + bullets + " пуль.");
+}
+\end{DoxyVerb}
+ \}\hypertarget{md__r_e_a_d_m_e_autotoc_md5}{}\doxysubsection{\texorpdfstring{Задача 7}{Задача 7}}\label{md__r_e_a_d_m_e_autotoc_md5}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md6}{}\doxysubsubsection{\texorpdfstring{Текст задачи}{Текст задачи}}\label{md__r_e_a_d_m_e_autotoc_md6}
+Непустые Имена. Измените сущность Имя из задачи 1.\+4.\+5. Гарантируйте, что:\+ • Как минимум один параметр будет иметь не null значение и не пустую строку. • Имя неизменяемо. Продемонстрируйте работоспособность решения на примерах. \hypertarget{md__r_e_a_d_m_e_autotoc_md7}{}\doxysubsubsection{\texorpdfstring{Алгоритм решения}{Алгоритм решения}}\label{md__r_e_a_d_m_e_autotoc_md7}
+package ru.\+tsygvintsev.\+names;
+
+public final class Names \{ private final String last\+Name; private final String first\+Name; private final String patronymic; \begin{DoxyVerb}public Names(String firstName) {
+    if (firstName == null || firstName.trim().isEmpty()) {
+        throw new IllegalArgumentException("Имя не может быть пустым");
+    }
+    this.firstName = firstName;
+    this.lastName = null;
+    this.patronymic = null;
+}
+
+public Names(String firstName, String lastName) {
+    if ((firstName == null || firstName.trim().isEmpty()) &&
+            (lastName == null || lastName.trim().isEmpty())) {
+        throw new IllegalArgumentException("Хотя бы один параметр должен быть заполнен");
+    }
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.patronymic = null;
+}
+
+public Names(String firstName, String lastName, String patronymic) {
+    if ((firstName == null || firstName.trim().isEmpty()) &&
+            (lastName == null || lastName.trim().isEmpty()) &&
+            (patronymic == null || patronymic.trim().isEmpty())) {
+        throw new IllegalArgumentException("Хотя бы один параметр должен быть заполнен");
+    }
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.patronymic = patronymic;
+}
+
+@Override
+public String toString() {
+    String result = firstName;
+    if (lastName != null && !lastName.isEmpty()) {
+        result += " " + lastName;
+    }
+    if (patronymic != null && !patronymic.isEmpty()) {
+        result += " " + patronymic;
+    }
+    return result;
+}
+\end{DoxyVerb}
+ \}\hypertarget{md__r_e_a_d_m_e_autotoc_md8}{}\doxysection{\texorpdfstring{Задание 2}{Задание 2}}\label{md__r_e_a_d_m_e_autotoc_md8}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md9}{}\doxysubsection{\texorpdfstring{Задача 3}{Задача 3}}\label{md__r_e_a_d_m_e_autotoc_md9}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md10}{}\doxysubsubsection{\texorpdfstring{Текст задачи}{Текст задачи}}\label{md__r_e_a_d_m_e_autotoc_md10}
+Желтые страницы. Необходимо разработать сущность ТелефонныйСправочник, который будет использоваться для создания справочника со списком телефонов и имен, с целью поиска телефона по имени. Будем считать достаточным хранение пар телефон-\/строка, например “89003337788 -\/ Вася”. Состояние сущности описывается набором пар “телефон – имя”, причем и телефон и имя являются строками. В целях упрощения задачи будем считать, что одному имени всегда соответствует один телефон, и один телефон соответствует одному имени. Инициализация сущности выполняется без аргументов. Поведение сущности описывают следующие действия:\+ • Добавление новой пары “телефон – имя” (как два отдельных аргумента). Конкретное местоположение добавленной пары не важно. Если добавляемое имя уже есть в списке, то имеющийся телефон заменяется на новый, и затем старый телефон возвращается из метода. • Удаление значения. Для удаления необходимо указать имя удаляемого контакта, после чего удаляется вся пара. • Получение значений. Для получения необходимо указать имя контакта, тогда возвращается его телефон. • Может быть приведен к строке. Строка должна представлять собой полный перечень всех хранимых пар. • Можно проверить есть ли конкретный телефон или конкретное имя в списке. • Можно узнать текущее количество контактов. • Можно запросить в виде массива:\+ o Все пары o Все телефоны o Все имена • Можно получить массив всех имен, указав часть названия (начиная с первого символа). Продемонстрируйте работоспособность решения на примерах. \hypertarget{md__r_e_a_d_m_e_autotoc_md11}{}\doxysubsubsection{\texorpdfstring{Алгоритм решения}{Алгоритм решения}}\label{md__r_e_a_d_m_e_autotoc_md11}
+package ru.\+tsygvintsev.\+phones;
+
+import java.\+util.\+Hash\+Map; import java.\+util.\+Map;
+
+public class Phone\+Book \{ private Map$<$\+String, String$>$ contacts; \begin{DoxyVerb}public PhoneBook() {
+    this.contacts = new HashMap<>();
+}
+
+public String addContact(String phoneNumber, String name) {
+    String previousNumber = null;
+
+    for (Map.Entry<String, String> entry: contacts.entrySet()) {
+        if (entry.getValue().equals(name)) {
+            previousNumber = entry.getKey();
+            contacts.remove(previousNumber);
+        }
+    }
+
+    contacts.put(phoneNumber, name);
+
+    return previousNumber;
+}
+
+public void removeContact(String name) {
+    for (Map.Entry<String, String> entry : contacts.entrySet()) {
+        if (entry.getValue().equals(name)) {
+            contacts.remove(entry.getKey());
+        }
+    }
+}
+
+public String getContact(String name) {
+    for (Map.Entry<String, String> entry : contacts.entrySet()) {
+        if (entry.getValue().equals(name)) {
+            return entry.getKey() + " - " + entry.getValue();
+        }
+    }
+
+    return "Не найдено";
+}
+
+public String checkContact(String text) {
+    for (Map.Entry<String, String> entry : contacts.entrySet()) {
+        if (entry.getValue().equals(text) || entry.getKey().equals(text)) {
+            return entry.getKey() + " - " + entry.getValue();
+        }
+    }
+
+    return "Не существует";
+}
+
+public int countContact() {
+    int count = 0;
+
+    for (Map.Entry<String, String> entry : contacts.entrySet()) {
+        count++;
+    }
+
+    return count;
+}
+
+public String[] getContactArray(int choice) {
+    String[] contactsArray = new String[contacts.size()];
+    int i = 0;
+
+    switch (choice) {
+        case 1:
+            for (Map.Entry<String, String> entry : contacts.entrySet()) {
+                contactsArray[i] = entry.getKey() + " - " + entry.getValue();
+                i++;
+            }
+            break;
+        case 2:
+            for (Map.Entry<String, String> entry : contacts.entrySet()) {
+                contactsArray[i] = entry.getKey();
+                i++;
+            }
+            break;
+        case 3:
+            for (Map.Entry<String, String> entry : contacts.entrySet()) {
+                contactsArray[i] = entry.getValue();
+                i++;
+            }
+            break;
+        default:
+            return contactsArray;
+    }
+    return contactsArray;
+}
+
+public String[] contactSearch(String namePart) {
+    String[] foundContacts = new String[contacts.size()];
+    int i = 0;
+    String name;
+
+    for (Map.Entry<String, String> entry : contacts.entrySet()) {
+        name = entry.getValue();
+        if (name.startsWith(namePart)) {
+            foundContacts[i] = entry.getValue();
+            i++;
+        }
+    }
+
+    return foundContacts;
+}
+
+@Override
+public String toString() {
+    String result = "";
+    for (Map.Entry<String, String> entry : contacts.entrySet()) {
+        result = result + entry.getKey() + " - " + entry.getValue() + "; ";
+    }
+    return result;
+}
+\end{DoxyVerb}
+
+
+\}\hypertarget{md__r_e_a_d_m_e_autotoc_md12}{}\doxysection{\texorpdfstring{Задание 3}{Задание 3}}\label{md__r_e_a_d_m_e_autotoc_md12}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md13}{}\doxysubsection{\texorpdfstring{Задача 4}{Задача 4}}\label{md__r_e_a_d_m_e_autotoc_md13}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md14}{}\doxysubsubsection{\texorpdfstring{Текст задачи}{Текст задачи}}\label{md__r_e_a_d_m_e_autotoc_md14}
+Автомат. Создайте такой подвид сущности Пистолет из задачи 2.\+1.\+5, которая будет совпадать с ней во всех отношениях, кроме следующего:\+ • Имеет скорострельность (целое число, неизменяемое) которое обозначает количество выстрелов в секунду, поддерживаемое данным автоматом. Скорострельность всегда положительное число. • При вызове Стрелять количество выстрелов соответствует скорострельности (например, при скорострельности 3 выводится три строки с текстом выстрела). • Умеет Стрелять N секунд, что приводит к количеству выстрелов равному N умноженное на скорострельность. • Инициализация может быть выполнены следующими способами:\+ a) Без параметров. Скорострельность 30, вместимость 30. b) С указанием максимального числа патронов. Скорострельность будет равна половине обоймы c) С указанием максимального количества патронов в обойме и скорострельности. \hypertarget{md__r_e_a_d_m_e_autotoc_md15}{}\doxysubsubsection{\texorpdfstring{Алгоритм решения}{Алгоритм решения}}\label{md__r_e_a_d_m_e_autotoc_md15}
+package ru.\+tsygvintsev.\+weapons;
+
+public class Automate extends Gun\{ private final int speed; \begin{DoxyVerb}public Automate() {
+    this.speed = 30;
+}
+
+public Automate(int maxBullets) {
+    super(maxBullets);
+    this.speed = maxBullets / 2;
+}
+
+public Automate(int maxBullets, int speed) {
+    super(maxBullets);
+    this.speed = speed;
+}
+
+@Override
+public void fire() {
+    for (int i = 0; i < speed; i++) {
+        super.fire();
+    }
+}
+
+public void longFire(int time) {
+    for (int i = 0; i < (time * speed); i++) {
+        super.fire();
+    }
+}
+\end{DoxyVerb}
+ \}\hypertarget{md__r_e_a_d_m_e_autotoc_md16}{}\doxysection{\texorpdfstring{Задание 4}{Задание 4}}\label{md__r_e_a_d_m_e_autotoc_md16}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md17}{}\doxysubsection{\texorpdfstring{Задача 1}{Задача 1}}\label{md__r_e_a_d_m_e_autotoc_md17}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md18}{}\doxysubsubsection{\texorpdfstring{Текст задачи}{Текст задачи}}\label{md__r_e_a_d_m_e_autotoc_md18}
+Оружие. Измените сущность Пистолет, полученную в задаче 2.\+1.\+5 таким образом, чтобы она наследовалась от класса Weapon описанного на рисунке:\+ abstract class Weapon \{ private int ammo; public Weapon(int ammo) \{ if(ammo$<$0) throw new Runtime\+Exception(); this.\+ammo = ammo; \} abstract void shoot(); public int ammo() \{return ammo;\} public boolean get\+Ammo() \{ if(ammo==0) return false; ammo--; return true; \}
+
+public int load(int ammo) \{ if(ammo$<$0) throw new Runtime\+Exception(); int tmp=ammo; this.\+ammo=ammo; return tmp; \} \hypertarget{md__r_e_a_d_m_e_autotoc_md19}{}\doxysubsubsection{\texorpdfstring{Алгоритм решения}{Алгоритм решения}}\label{md__r_e_a_d_m_e_autotoc_md19}
+package ru.\+tsygvintsev.\+weapons;
+
+public class Gun extends Weapon\{ private final int max\+Bullets;
+
+\begin{DoxyVerb}    public Gun() {
+        super(0);
+        this.maxBullets = 30;
+    }
+
+    public Gun(int maxBullets) {
+        super(0);
+        this.maxBullets = maxBullets;
+    }
+
+    public int getMaxBullets () {
+        return maxBullets;
+    }
+
+    @Override
+    public void shoot() {
+        if (getAmmo()) {
+            System.out.println("Бах!");
+        } else {
+            System.out.println("Клац!");
+        }
+    }
+
+    @Override
+    public int load(int ammo) {
+        if (ammo < 0) {
+            System.out.println("Не может быть отрицательного числа патронов.");
+            return 0;
+        }
+
+        if (ammo > maxBullets) {
+            super.load(maxBullets);
+            return ammo - maxBullets;
+        }
+
+        super.load(ammo);
+
+        return 0;
+    }
+
+    public int unload () {
+        int returnBullets = ammo();
+        load(0);
+        return returnBullets;
+    }
+
+    public int getBullets() {
+        return ammo;
+    }
+
+    public boolean isLoaded() {
+        return ammo > 0;
+    }
+
+    @Override
+    public String toString() {
+        return ("Пистолет с максимумом " + maxBullets + " патронов, заряженный на " + ammo() + " пуль.");
+    }
+}
+\end{DoxyVerb}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md20}{}\doxysection{\texorpdfstring{Задание 5}{Задание 5}}\label{md__r_e_a_d_m_e_autotoc_md20}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md21}{}\doxysubsection{\texorpdfstring{Задача 8}{Задача 8}}\label{md__r_e_a_d_m_e_autotoc_md21}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md22}{}\doxysubsubsection{\texorpdfstring{Текст задачи}{Текст задачи}}\label{md__r_e_a_d_m_e_autotoc_md22}
+Лучший стрелок. Создайте сущность Стрелок, которая описывается:\+ • Имя, строка • Оружие, из задачи 2.\+4.\+1. • При создании объекта необходимо указать ему имя • Имя и оружие можно поменять и получить в любой момент без ограничения. Основная способность Стрелка -\/ умение стрелять. Если оружие есть, то выстрел происходит по правилам оружия, если его нет – то выводится текст “не могу участвовать в перестрелке”. Создайте трех стрелков:\+ одного без оружия, одного с пистолетом и одного с автоматом, и пусть каждый из них выстрелит. \hypertarget{md__r_e_a_d_m_e_autotoc_md23}{}\doxysubsubsection{\texorpdfstring{Алгоритм решения}{Алгоритм решения}}\label{md__r_e_a_d_m_e_autotoc_md23}
+package ru.\+tsygvintsev.\+weapons;
+
+public class Shooter \{ private String name; private Weapon weapon; \begin{DoxyVerb}public Shooter(String name) {
+    this.name = name;
+}
+
+public void setName(String name) {
+    this.name = name;
+}
+
+public void setWeapon(Weapon weapon) {
+    this.weapon = weapon;
+}
+
+public void shoot() {
+    if (this.weapon != null) {
+        weapon.shoot();
+    } else {
+        System.out.println("не могу участвовать в перестрелке");
+    }
+}
+\end{DoxyVerb}
+ \}\hypertarget{md__r_e_a_d_m_e_autotoc_md24}{}\doxysection{\texorpdfstring{Задание 7}{Задание 7}}\label{md__r_e_a_d_m_e_autotoc_md24}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md25}{}\doxysubsection{\texorpdfstring{Задача 1}{Задача 1}}\label{md__r_e_a_d_m_e_autotoc_md25}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md26}{}\doxysubsubsection{\texorpdfstring{Текст задачи}{Текст задачи}}\label{md__r_e_a_d_m_e_autotoc_md26}
+Навести порядок. Данная задача предполагает реорганизацию ранее написанных классов. Расположите все ранее написанные классы по пакетам таким образом, чтобы логически близкие классы оказались сгруппированы друг с другом. Имена пакетов должны иметь как минимум трехсоставную форму, вида:\+ ru.\+surname.\+type. Вместо surname следует подставить свою фамилию, а вместо type подставить название логического блока. Например, классы описывающие точку, линию, ломаную линию, фигуру, квадрат, треугольник, круг и прямоугольник можно расположить в пакете ru.\+surname.\+geometry.\hypertarget{md__r_e_a_d_m_e_autotoc_md27}{}\doxysubsection{\texorpdfstring{Задача 2}{Задача 2}}\label{md__r_e_a_d_m_e_autotoc_md27}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md28}{}\doxysubsubsection{\texorpdfstring{Текст задачи}{Текст задачи}}\label{md__r_e_a_d_m_e_autotoc_md28}
+Главный метод. Создайте пакет ru.\+surname.\+main (вместо surname необходимо подставить собственную фамилию) в котором расположить класс с точкой входа в исполнение программы (public static void main). Также следует проверить, что ни в одном другом пакете нет классов имеющих точку входа в исполнение программы. В этом же пакете необходимо расположить класс (или интерфейс) с методами из задач блока 2.\+5 и продемонстрировать их работоспособность.\hypertarget{md__r_e_a_d_m_e_autotoc_md29}{}\doxysubsection{\texorpdfstring{Задача 3}{Задача 3}}\label{md__r_e_a_d_m_e_autotoc_md29}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md30}{}\doxysubsubsection{\texorpdfstring{Текст задачи}{Текст задачи}}\label{md__r_e_a_d_m_e_autotoc_md30}
+Возведение в степень. Создайте метод принимающий две строки, в которых будут записаны числа X и Y. Возвращает метод результат возведения X в степень Y. Для преобразования строки в число следует использовать метод Integer.\+parse\+Int, а для возведения в степень метод Math.\+pow. Вызовите разработанный метод передав туда параметры командной строки полученные точкой входа в программу. Реализуйте метод так, что бы для возведения в степень и преобразования строки использовались короткие имена статических методов \hypertarget{md__r_e_a_d_m_e_autotoc_md31}{}\doxysubsubsection{\texorpdfstring{Алгоритм решения}{Алгоритм решения}}\label{md__r_e_a_d_m_e_autotoc_md31}
+public static double power(\+String x\+String, String y\+String) \{ int x = parse\+Int(x\+String); int y = parse\+Int(y\+String); return pow(x, y); \}\hypertarget{md__r_e_a_d_m_e_autotoc_md32}{}\doxysection{\texorpdfstring{Задание 8}{Задание 8}}\label{md__r_e_a_d_m_e_autotoc_md32}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md33}{}\doxysubsection{\texorpdfstring{Задача 2}{Задача 2}}\label{md__r_e_a_d_m_e_autotoc_md33}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md34}{}\doxysubsubsection{\texorpdfstring{Текст задачи}{Текст задачи}}\label{md__r_e_a_d_m_e_autotoc_md34}
+Патроны наследникам. Измените класс Weapon из задачи 2.\+4.\+1 таким образом, что бы любой класс наследник мог непосредственно работать сполем хранящим количество патронов заряженном в оружии. Обратите внимание, что метод разрядки Пистолет, усложнившийся при решении задачи 2.\+4.\+1снова можно упростить \hypertarget{md__r_e_a_d_m_e_autotoc_md35}{}\doxysubsubsection{\texorpdfstring{Алгоритм решения}{Алгоритм решения}}\label{md__r_e_a_d_m_e_autotoc_md35}
+package ru.\+tsygvintsev.\+weapons;
+
+abstract class Weapon \{ protected int ammo; \begin{DoxyVerb}public Weapon(int ammo) {
+    if(ammo<0) throw new RuntimeException();
+    this.ammo = ammo;
+}
+public abstract void shoot();
+public int ammo() {return ammo;}
+public boolean getAmmo() {
+    if(ammo==0) return false;
+    ammo--;
+    return true;
+}
+
+public int load(int ammo) {
+    if(ammo<0) throw new RuntimeException();
+    int tmp=ammo;
+    this.ammo=ammo;
+    return tmp;
+}
+\end{DoxyVerb}
+ \} 

@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="_shooter_8java" kind="file" language="Java">
+    <compoundname>Shooter.java</compoundname>
+    <innerclass refid="classru_1_1tsygvintsev_1_1weapons_1_1_shooter" prot="public">ru::tsygvintsev::weapons::Shooter</innerclass>
+    <innernamespace refid="namespaceru_1_1tsygvintsev_1_1weapons">ru::tsygvintsev::weapons</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">package<sp/></highlight><highlight class="normal">ru.tsygvintsev.weapons;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="classru_1_1tsygvintsev_1_1weapons_1_1_shooter" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classru_1_1tsygvintsev_1_1weapons_1_1_shooter_1aafb6f75a16493db1f2b25d5156031f0b" kindref="member">Shooter</ref><sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>String<sp/><ref refid="classru_1_1tsygvintsev_1_1weapons_1_1_shooter_1aad2efba7689436c725f7b41867a8ed0e" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/><ref refid="classru_1_1tsygvintsev_1_1weapons_1_1_weapon" kindref="compound">Weapon</ref><sp/><ref refid="classru_1_1tsygvintsev_1_1weapons_1_1_shooter_1abc7729263b73f4bc044dc7ca7a3e1915" kindref="member">weapon</ref>;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classru_1_1tsygvintsev_1_1weapons_1_1_shooter_1aafb6f75a16493db1f2b25d5156031f0b" kindref="member">Shooter</ref>(String<sp/><ref refid="classru_1_1tsygvintsev_1_1weapons_1_1_shooter_1aad2efba7689436c725f7b41867a8ed0e" kindref="member">name</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.name<sp/>=<sp/><ref refid="classru_1_1tsygvintsev_1_1weapons_1_1_shooter_1aad2efba7689436c725f7b41867a8ed0e" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classru_1_1tsygvintsev_1_1weapons_1_1_shooter_1a4a4bc1ae3b6b2e15ab6264ee26da528a" kindref="member">setName</ref>(String<sp/><ref refid="classru_1_1tsygvintsev_1_1weapons_1_1_shooter_1aad2efba7689436c725f7b41867a8ed0e" kindref="member">name</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.name<sp/>=<sp/><ref refid="classru_1_1tsygvintsev_1_1weapons_1_1_shooter_1aad2efba7689436c725f7b41867a8ed0e" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classru_1_1tsygvintsev_1_1weapons_1_1_shooter_1a7f1d69764ab5939f10ffe698e1fb3c35" kindref="member">setWeapon</ref>(<ref refid="classru_1_1tsygvintsev_1_1weapons_1_1_weapon" kindref="compound">Weapon</ref><sp/><ref refid="classru_1_1tsygvintsev_1_1weapons_1_1_shooter_1abc7729263b73f4bc044dc7ca7a3e1915" kindref="member">weapon</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.weapon<sp/>=<sp/><ref refid="classru_1_1tsygvintsev_1_1weapons_1_1_shooter_1abc7729263b73f4bc044dc7ca7a3e1915" kindref="member">weapon</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classru_1_1tsygvintsev_1_1weapons_1_1_shooter_1a8806f80316bd6e3615dbafd89974fef5" kindref="member">shoot</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this.weapon<sp/>!=<sp/></highlight><highlight class="keyword">null</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classru_1_1tsygvintsev_1_1weapons_1_1_shooter_1abc7729263b73f4bc044dc7ca7a3e1915" kindref="member">weapon</ref>.shoot();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>System.out.println(</highlight><highlight class="stringliteral">&quot;не<sp/>могу<sp/>участвовать<sp/>в<sp/>перестрелке&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/ru/tsygvintsev/weapons/Shooter.java"/>
+  </compounddef>
+</doxygen>

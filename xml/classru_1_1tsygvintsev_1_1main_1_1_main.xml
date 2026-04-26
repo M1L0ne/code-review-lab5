@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classru_1_1tsygvintsev_1_1main_1_1_main" kind="class" language="Java" prot="public">
+    <compoundname>ru::tsygvintsev::main::Main</compoundname>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1main_1_1_main_1a5f8a9334268e92c659c89a60fe16545e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ru.tsygvintsev.main.Main.main</definition>
+        <argsstring>(String[] args)</argsstring>
+        <name>main</name>
+        <qualifiedname>ru.tsygvintsev.main.Main.main</qualifiedname>
+        <param>
+          <type>String[]</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>точка входа в программу <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>аргументы командной строки </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/main/Main.java" line="19" column="24" bodyfile="src/ru/tsygvintsev/main/Main.java" bodystart="19" bodyend="52"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1main_1_1_main_1a8388ff0d92a35bcb6ba70abb1fb9ccd3" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ru.tsygvintsev.main.Main.runGunTask</definition>
+        <argsstring>(Scanner sc)</argsstring>
+        <name>runGunTask</name>
+        <qualifiedname>ru.tsygvintsev.main.Main.runGunTask</qualifiedname>
+        <param>
+          <type>Scanner</type>
+          <declname>sc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>запуск задачи с пистолетом <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>сканер </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/main/Main.java" line="58" column="25" bodyfile="src/ru/tsygvintsev/main/Main.java" bodystart="58" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1main_1_1_main_1a0663a52d509f856304232a4fa2a60b3f" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ru.tsygvintsev.main.Main.runNamesTask</definition>
+        <argsstring>(Scanner sc)</argsstring>
+        <name>runNamesTask</name>
+        <qualifiedname>ru.tsygvintsev.main.Main.runNamesTask</qualifiedname>
+        <param>
+          <type>Scanner</type>
+          <declname>sc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>запуск задачи с именами <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>сканер </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/main/Main.java" line="124" column="25" bodyfile="src/ru/tsygvintsev/main/Main.java" bodystart="124" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1main_1_1_main_1ae64f92048fb1169ccbc48e7f8a67866a" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ru.tsygvintsev.main.Main.runPhoneBookTask</definition>
+        <argsstring>(Scanner sc)</argsstring>
+        <name>runPhoneBookTask</name>
+        <qualifiedname>ru.tsygvintsev.main.Main.runPhoneBookTask</qualifiedname>
+        <param>
+          <type>Scanner</type>
+          <declname>sc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>запуск задачи с телефонной книгой <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>сканер </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/main/Main.java" line="152" column="25" bodyfile="src/ru/tsygvintsev/main/Main.java" bodystart="152" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1main_1_1_main_1a2a47c0981e3d763a05d4e70680d0592c" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ru.tsygvintsev.main.Main.printArray</definition>
+        <argsstring>(String[] arr)</argsstring>
+        <name>printArray</name>
+        <qualifiedname>ru.tsygvintsev.main.Main.printArray</qualifiedname>
+        <param>
+          <type>String[]</type>
+          <declname>arr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>вывод массива строк <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>arr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>массив </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/main/Main.java" line="240" column="25" bodyfile="src/ru/tsygvintsev/main/Main.java" bodystart="240" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1main_1_1_main_1ada24a49f9cc6fdc2fb21b97ae6d1176c" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ru.tsygvintsev.main.Main.runAutomateTask</definition>
+        <argsstring>(Scanner sc)</argsstring>
+        <name>runAutomateTask</name>
+        <qualifiedname>ru.tsygvintsev.main.Main.runAutomateTask</qualifiedname>
+        <param>
+          <type>Scanner</type>
+          <declname>sc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>запуск задачи с автоматом <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>сканер </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/main/Main.java" line="257" column="25" bodyfile="src/ru/tsygvintsev/main/Main.java" bodystart="257" bodyend="330"/>
+      </memberdef>
+      <memberdef kind="function" id="classru_1_1tsygvintsev_1_1main_1_1_main_1af740630af8cdf931fc67ace5027a3c0a" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int ru.tsygvintsev.main.Main.readInt</definition>
+        <argsstring>(Scanner sc)</argsstring>
+        <name>readInt</name>
+        <qualifiedname>ru.tsygvintsev.main.Main.readInt</qualifiedname>
+        <param>
+          <type>Scanner</type>
+          <declname>sc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>безопасное чтение целого числа <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>сканер </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>число </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ru/tsygvintsev/main/Main.java" line="337" column="24" bodyfile="src/ru/tsygvintsev/main/Main.java" bodystart="337" bodyend="347"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>главный класс для запуска консольного меню задач </para>
+    </detaileddescription>
+    <location file="src/ru/tsygvintsev/main/Main.java" line="14" column="7" bodyfile="src/ru/tsygvintsev/main/Main.java" bodystart="14" bodyend="348"/>
+    <listofallmembers>
+      <member refid="classru_1_1tsygvintsev_1_1main_1_1_main_1a5f8a9334268e92c659c89a60fe16545e" prot="public" virt="non-virtual"><scope>ru::tsygvintsev::main::Main</scope><name>main</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1main_1_1_main_1a2a47c0981e3d763a05d4e70680d0592c" prot="private" virt="non-virtual"><scope>ru::tsygvintsev::main::Main</scope><name>printArray</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1main_1_1_main_1af740630af8cdf931fc67ace5027a3c0a" prot="private" virt="non-virtual"><scope>ru::tsygvintsev::main::Main</scope><name>readInt</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1main_1_1_main_1ada24a49f9cc6fdc2fb21b97ae6d1176c" prot="private" virt="non-virtual"><scope>ru::tsygvintsev::main::Main</scope><name>runAutomateTask</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1main_1_1_main_1a8388ff0d92a35bcb6ba70abb1fb9ccd3" prot="private" virt="non-virtual"><scope>ru::tsygvintsev::main::Main</scope><name>runGunTask</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1main_1_1_main_1a0663a52d509f856304232a4fa2a60b3f" prot="private" virt="non-virtual"><scope>ru::tsygvintsev::main::Main</scope><name>runNamesTask</name></member>
+      <member refid="classru_1_1tsygvintsev_1_1main_1_1_main_1ae64f92048fb1169ccbc48e7f8a67866a" prot="private" virt="non-virtual"><scope>ru::tsygvintsev::main::Main</scope><name>runPhoneBookTask</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
