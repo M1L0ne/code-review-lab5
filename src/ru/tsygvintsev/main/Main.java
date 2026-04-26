@@ -23,7 +23,7 @@ public class Main {
         System.out.println("Для выхода введите '-1'");
 
         do {
-            System.out.println("Введите номер задачи (1-5):");
+            System.out.println("Введите номер задачи (1-4):");
             System.out.println("1 - Перезарядка пистолета");
             System.out.println("2 - Непустые имена");
             System.out.println("3 - Желтые страницы");
