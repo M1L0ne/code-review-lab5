@@ -28,7 +28,6 @@ public class Main {
             System.out.println("2 - Непустые имена");
             System.out.println("3 - Желтые страницы");
             System.out.println("4 - Автомат");
-            System.out.println("5 - Лучший стрелок");
 
             try {
                 taskNum = readInt(sc);
